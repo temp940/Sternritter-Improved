@@ -1,0 +1,935 @@
+
+/* ==========================================
+   STERNRITTERS
+   CONTACT PAGE - STYLE6.CSS
+========================================== */
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #f5f0e8;
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+
+/* ==========================================
+   NAVIGATION HEADER
+========================================== */
+
+.site-header {
+    width: 100%;
+    min-height: 100px;
+
+    padding: 25px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    background: #080808;
+
+    border-bottom: 1px solid
+        rgba(229, 188, 104, 0.18);
+}
+
+
+/* LOGO */
+
+.logo {
+    color: #e5bc68;
+
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+    white-space: nowrap;
+}
+
+.logo:hover {
+    text-shadow: 0 0 15px
+        rgba(229, 188, 104, 0.5);
+}
+
+
+/* NAVIGATION LINKS */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.main-nav a {
+    color: #ddd4c5;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #e5bc68;
+}
+
+
+/* HEADER ACTIONS */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.appointment-btn {
+    color: #e5bc68;
+
+    border: 1px solid #e5bc68;
+
+    padding: 14px 20px;
+
+    font-size: 11px;
+    letter-spacing: 1.5px;
+
+    white-space: nowrap;
+}
+
+.appointment-btn:hover {
+    background: #e5bc68;
+    color: #080808;
+}
+
+
+/* ==========================================
+   CONTACT PAGE
+========================================== */
+
+.contact-main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            ellipse at 50% 35%,
+            #211713 0%,
+            #100d0b 40%,
+            #080808 80%
+        );
+}
+
+.contact-section {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 70px 0 75px;
+}
+
+
+/* PAGE HEADING */
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.eyebrow {
+    color: #e5bc68;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.contact-heading h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 5vw, 70px);
+    font-weight: normal;
+
+    margin: 20px 0;
+}
+
+.contact-heading h1 span {
+    color: #e5bc68;
+    font-style: italic;
+}
+
+.gold-line {
+    width: 65px;
+    height: 2px;
+
+    background: #e5bc68;
+
+    margin: 20px auto 25px;
+}
+
+.contact-description {
+    color: #b7afa4;
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* ==========================================
+   CONTACT CARDS
+========================================== */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.contact-card {
+    min-height: 215px;
+
+    padding: 30px;
+
+    background: rgba(17, 15, 13, 0.9);
+
+    border: 1px solid
+        rgba(229, 188, 104, 0.25);
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    border-color: #e5bc68;
+
+    background: #1b1510;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 30px
+        rgba(0, 0, 0, 0.3);
+}
+
+.contact-icon {
+    display: block;
+
+    color: #e5bc68;
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.contact-card h2 {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+    font-weight: normal;
+
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #b7afa4;
+
+    font-size: 13px;
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.contact-value {
+    display: inline-block;
+
+    color: #e5bc68;
+
+    font-size: 12px;
+    letter-spacing: 0.5px;
+
+    overflow-wrap: anywhere;
+}
+
+.demo-note {
+    font-size: 11px !important;
+    margin-top: 12px;
+    margin-bottom: 0 !important;
+    color: #888077 !important;
+}
+
+
+/* ==========================================
+   SOCIAL MEDIA SECTION
+========================================== */
+
+.social-section {
+    text-align: center;
+
+    margin-top: 60px;
+    padding-top: 45px;
+
+    border-top: 1px solid
+        rgba(229, 188, 104, 0.2);
+}
+
+.social-section h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(28px, 3vw, 39px);
+    font-weight: normal;
+
+    margin: 15px 0 30px;
+}
+
+.social-section h2 span {
+    color: #e5bc68;
+    font-style: italic;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 45px;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 9px;
+
+    min-width: 150px;
+    padding: 10px;
+
+    transition: 0.3s ease;
+}
+
+.social-item:hover {
+    transform: translateY(-4px);
+}
+
+.social-symbol {
+    color: #e5bc68;
+    font-size: 28px;
+}
+
+.social-item strong {
+    color: #f5f0e8;
+
+    font-size: 12px;
+    font-weight: normal;
+
+    letter-spacing: 1px;
+}
+
+.social-item small {
+    color: #b7afa4;
+
+    font-size: 11px;
+}
+
+.social-disclaimer {
+    color: #81786d;
+
+    font-size: 11px;
+    line-height: 1.8;
+
+    margin-top: 30px;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.site-footer {
+    margin-top: auto;
+
+    padding: 28px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    background: #050505;
+
+    border-top: 1px solid
+        rgba(229, 188, 104, 0.15);
+}
+
+.site-footer p {
+    color: #827c72;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.footer-center {
+    color: #e5bc68 !important;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #a9a094;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.footer-links a:hover {
+    color: #e5bc68;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .site-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+        gap: 18px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        padding: 22px 5%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .main-nav {
+        gap: 12px 18px;
+    }
+
+    .main-nav a {
+        font-size: 10px;
+    }
+
+    .appointment-btn {
+        padding: 11px 14px;
+        font-size: 10px;
+    }
+
+    .contact-section {
+        width: 92%;
+        padding: 55px 0;
+    }
+
+    .contact-heading {
+        margin-bottom: 35px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .contact-card {
+        min-height: auto;
+        padding: 30px 20px;
+    }
+
+    .social-section {
+        margin-top: 45px;
+        padding-top: 35px;
+    }
+
+    .social-links {
+        gap: 20px;
+    }
+
+    .social-item {
+        min-width: 120px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width: 400px) {
+
+    .eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-item {
+        min-width: 100px;
+    }
+
+}
+
+
+/* ACCESSIBILITY */
+
+a:focus-visible {
+    outline: 2px solid #e5bc68;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
+    }
+
+}
+
+
+/* ==========================================
+   STERNRITTERS CONTACT PAGE
+   FINAL RESPONSIVE IMPROVEMENTS
+   ADD TO BOTTOM OF STYLE6.CSS
+========================================== */
+
+/* GENERAL IMPROVEMENTS */
+
+body {
+    overflow-x: hidden;
+}
+
+.contact-main,
+.contact-section,
+.contact-grid,
+.contact-card,
+.social-section {
+    min-width: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========================================
+   HEADER - MATCH OTHER PAGES
+========================================== */
+
+.site-header {
+    position: relative;
+    z-index: 10;
+
+    min-height: 100px;
+    padding: 24px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    flex-shrink: 0;
+
+    font-size: 27px;
+    letter-spacing: 3px;
+    line-height: 1.2;
+}
+
+.main-nav {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 14px 24px;
+}
+
+.main-nav a {
+    font-size: 12px;
+    letter-spacing: 0.7px;
+}
+
+.header-actions {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.appointment-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    padding: 12px 18px;
+
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+/* ==========================================
+   CONTACT CONTENT
+========================================== */
+
+.contact-section {
+    width: 90%;
+    max-width: 1100px;
+    padding: 85px 0 90px;
+}
+
+.contact-heading h1 {
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1.2;
+}
+
+.contact-description {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.contact-card {
+    min-width: 0;
+    padding: 35px 30px;
+}
+
+.contact-value {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+/* ==========================================
+   SOCIAL MEDIA
+========================================== */
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-item {
+    min-width: 0;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.social-item small {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1250px) {
+
+    .site-header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 18px;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    .site-header {
+        padding: 20px 5% 18px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 17px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: clamp(20px, 5.5vw, 25px);
+        letter-spacing: 2.5px;
+        white-space: normal;
+    }
+
+    .main-nav {
+        order: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 8px 14px;
+    }
+
+    .main-nav a {
+        padding: 5px 2px;
+
+        font-size: 11px;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .appointment-btn {
+        min-height: 42px;
+        padding: 11px 20px;
+        font-size: 10px;
+    }
+
+    /* PAGE HEADING */
+
+    .contact-section {
+        width: 90%;
+        padding: 65px 0 75px;
+    }
+
+    .contact-heading {
+        margin-bottom: 35px;
+    }
+
+    .contact-heading h1 {
+        font-size: clamp(36px, 9vw, 52px);
+        margin: 18px 0;
+    }
+
+    .eyebrow {
+        font-size: 10px;
+        letter-spacing: 1.8px;
+        line-height: 1.7;
+    }
+
+    .contact-description {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    /* CONTACT CARDS */
+
+    .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .contact-card {
+        min-height: 0;
+        padding: 30px 22px;
+    }
+
+    .contact-card h2 {
+        font-size: 25px;
+    }
+
+    .contact-card p {
+        font-size: 13px;
+    }
+
+    .contact-value {
+        font-size: 12px;
+    }
+
+    /* SOCIAL MEDIA */
+
+    .social-section {
+        margin-top: 50px;
+        padding-top: 40px;
+    }
+
+    .social-section h2 {
+        font-size: clamp(28px, 7vw, 39px);
+        line-height: 1.3;
+    }
+
+    .social-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .social-item {
+        padding: 18px 10px;
+    }
+
+    .social-disclaimer {
+        font-size: 10px;
+        line-height: 1.8;
+    }
+
+    /* FOOTER */
+
+    .site-footer {
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 15px;
+        padding: 30px 6%;
+
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media (max-width: 400px) {
+
+    .site-header {
+        gap: 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .main-nav {
+        gap: 7px 11px;
+    }
+
+    .main-nav a {
+        font-size: 10px;
+    }
+
+    .contact-heading h1 {
+        font-size: 35px;
+    }
+
+    .contact-card {
+        padding: 26px 18px;
+    }
+
+    .social-links {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .social-item {
+        padding: 15px;
+    }
+
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+
+}

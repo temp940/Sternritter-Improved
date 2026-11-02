@@ -1,0 +1,830 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>STERNRITTER | Your Basket</title>
+
+  <link rel="stylesheet" href="style5.css">
+</head>
+
+<body class="basket-page">
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+
+    <a href="index.html" class="logo">STERNRITTER</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="Suits_Collection.html">Our Collections</a>
+      <a href="Colours.html">Signature Shades</a>
+      <a href="Size_Ur_Suit.html">Size Guide</a>
+      <a href="Basket.html" class="active">Basket</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <a href="Contact.html" class="appointment-btn">
+        BOOK APPOINTMENT
+      </a>
+
+      
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="basket-hero">
+
+      <div class="basket-hero-content">
+
+        <p class="basket-eyebrow">
+          STERNRITTERS / YOUR SELECTION
+        </p>
+
+        <h1>Your <span>Basket.</span></h1>
+
+        <div class="basket-gold-line"></div>
+
+        <p class="basket-hero-description">
+          Every detail matters. Select your signature
+          piece, refine your preferences and complete
+          your bespoke experience.
+        </p>
+
+        <a href="#selection" class="hero-cta">
+          BEGIN YOUR SELECTION &#8594;
+        </a>
+
+      </div>
+
+      <div class="basket-hero-image">
+
+        <img
+          src="images/The Garment.png"
+          alt="STERNRITTERS luxury garment bag">
+
+      </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="basket-intro">
+
+      <p class="basket-eyebrow">
+        BESPOKE / EXCLUSIVE / TIMELESS
+      </p>
+
+      <h2>
+        Your Selection.<br>
+        <span>Your Legacy.</span>
+      </h2>
+
+      <p>
+        Every suit tells a story. This one begins with you.
+      </p>
+
+    </section>
+
+
+    <!-- CSS-ONLY SELECTION AND CONFIRMATION -->
+
+    <div class="basket-container" id="selection">
+
+      <input
+        type="radio"
+        name="basket-step"
+        id="step-selection"
+        class="step-control"
+        checked>
+
+      <input
+        type="radio"
+        name="basket-step"
+        id="step-confirmation"
+        class="step-control">
+
+
+      <div class="basket-workflow">
+
+        <!-- STEP 1: COLLECTION SELECTION -->
+
+        <section class="collection-section">
+
+          <p class="basket-eyebrow">
+            01 / THE COLLECTION
+          </p>
+
+          <h2 class="section-title">
+            Choose Your <span>Signature.</span>
+          </h2>
+
+          <p class="section-description">
+            Discover the collection that reflects
+            your character and individuality.
+          </p>
+
+          <div class="collection-grid">
+
+            <!-- ATELIER -->
+
+            <div class="collection-card">
+
+              <div class="collection-image">
+                <img
+                  src="images/Atelier.png"
+                  alt="The Atelier Suit"
+                  loading="lazy">
+              </div>
+
+              <div class="collection-card-content">
+
+                <p class="basket-eyebrow">
+                  COLLECTION 01
+                </p>
+
+                <h3>Atelier</h3>
+
+                <p>
+                  Timeless sophistication, defined
+                  by precision and refined tailoring.
+                </p>
+
+                <span class="collection-price">
+                  FROM £450
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- VESPER -->
+
+            <div class="collection-card">
+
+              <div class="collection-image">
+                <img
+                  src="images/Vesper.png"
+                  alt="The Vesper Suit"
+                  loading="lazy">
+              </div>
+
+              <div class="collection-card-content">
+
+                <p class="basket-eyebrow">
+                  COLLECTION 02
+                </p>
+
+                <h3>Vesper</h3>
+
+                <p>
+                  Contemporary elegance with
+                  a distinctive evening presence.
+                </p>
+
+                <span class="collection-price">
+                  FROM £520
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- DYNASTY -->
+
+            <div class="collection-card">
+
+              <div class="collection-image">
+                <img
+                  src="images/Dynasty.png"
+                  alt="The Dynasty Suit"
+                  loading="lazy">
+              </div>
+
+              <div class="collection-card-content">
+
+                <p class="basket-eyebrow">
+                  COLLECTION 03
+                </p>
+
+                <h3>Dynasty</h3>
+
+                <p>
+                  A commanding expression of
+                  heritage, confidence and legacy.
+                </p>
+
+                <span class="collection-price">
+                  FROM £650
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <!-- STEP 2: CUSTOMISATION -->
+
+        <section class="customisation-section">
+
+          <p class="basket-eyebrow">
+            02 / PERSONALISE YOUR SUIT
+          </p>
+
+          <h2 class="section-title">
+            Made for <span>You.</span>
+          </h2>
+
+          <p class="section-description">
+            Choose your preferred collection,
+            shade, fit and size.
+          </p>
+
+          <!--
+            This form is for a school-project
+            demonstration only.
+
+            It does not submit or store data.
+          -->
+
+          <form class="basket-form" id="basket-form">
+
+            <div class="form-grid">
+
+              <div class="form-group">
+
+                <label for="suit">
+                  SELECT COLLECTION *
+                </label>
+
+                <select id="suit" name="suit" required>
+                  <option value="" disabled selected>
+                    Choose your collection
+                  </option>
+                  <option value="Atelier">
+                    Atelier - From £450
+                  </option>
+                  <option value="Vesper">
+                    Vesper - From £520
+                  </option>
+                  <option value="Dynasty">
+                    Dynasty - From £650
+                  </option>
+                </select>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="shade">
+                  SIGNATURE SHADE *
+                </label>
+
+                <select id="shade" name="shade" required>
+                  <option value="" disabled selected>
+                    Choose your shade
+                  </option>
+                  <option>Midnight Black</option>
+                  <option>Royal Ivory</option>
+                  <option>Imperial Burgundy</option>
+                  <option>Emerald Green</option>
+                  <option>Royal Navy</option>
+                </select>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="fit">
+                  PREFERRED FIT *
+                </label>
+
+                <select id="fit" name="fit" required>
+                  <option value="" disabled selected>
+                    Choose your fit
+                  </option>
+                  <option>Slim Fit</option>
+                  <option>Tailored Fit</option>
+                  <option>Relaxed Fit</option>
+                </select>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="size">
+                  SUIT SIZE *
+                </label>
+
+                <select id="size" name="size" required>
+                  <option value="" disabled selected>
+                    Choose your size
+                  </option>
+                  <option>XS</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                  <option>XXL</option>
+                  <option>Bespoke Measurements</option>
+                </select>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="quantity">
+                  QUANTITY *
+                </label>
+
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  max="10"
+                  value="1"
+                  required>
+
+              </div>
+
+            </div>
+
+
+            <!-- PRICE REFERENCE -->
+
+            <div class="price-reference">
+
+              <p class="basket-eyebrow">
+                COLLECTION PRICE GUIDE
+              </p>
+
+              <div class="price-row">
+                <span>Atelier</span>
+                <strong>From £450.00</strong>
+              </div>
+
+              <div class="price-row">
+                <span>Vesper</span>
+                <strong>From £520.00</strong>
+              </div>
+
+              <div class="price-row">
+                <span>Dynasty</span>
+                <strong>From £650.00</strong>
+              </div>
+
+              <p class="price-note">
+                Demonstration prices only. Final prices
+                may vary depending on bespoke requirements.
+                Totals are not calculated automatically.
+              </p>
+
+            </div>
+
+
+            <!-- STEP 3: CUSTOMER DETAILS -->
+
+            <section class="details-section">
+
+              <p class="basket-eyebrow">
+                03 / PERSONAL INFORMATION
+              </p>
+
+              <h2 class="section-title">
+                Your <span>Details.</span>
+              </h2>
+
+              <p class="section-description">
+                Complete the details below to preview
+                the final stage of your order request.
+              </p>
+
+              <div class="form-grid">
+
+                <div class="form-group">
+
+                  <label for="first-name">
+                    FIRST NAME *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first_name"
+                    placeholder="Your first name"
+                    autocomplete="given-name"
+                    required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="last-name">
+                    LAST NAME *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last_name"
+                    placeholder="Your last name"
+                    autocomplete="family-name"
+                    required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="email">
+                    EMAIL ADDRESS *
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    autocomplete="email"
+                    required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="phone">
+                    PHONE NUMBER *
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+44"
+                    autocomplete="tel"
+                    required>
+
+                </div>
+
+              </div>
+
+
+              <!-- STEP 4: DELIVERY OR COLLECTION -->
+
+              <div class="delivery-section">
+
+                <p class="basket-eyebrow">
+                  04 / FULFILMENT
+                </p>
+
+                <h2 class="section-title">
+                  How Would You Like<br>
+                  <span>Your Suit?</span>
+                </h2>
+
+                <p class="section-description">
+                  Choose your preferred method.
+                </p>
+
+
+                <div class="fulfilment-options">
+
+                  <input
+                    type="radio"
+                    name="fulfilment"
+                    id="delivery"
+                    value="delivery"
+                    class="fulfilment-radio"
+                    required>
+
+                  <label for="delivery"
+                         class="fulfilment-card">
+
+                    <span class="fulfilment-icon">
+                      &#10022;
+                    </span>
+
+                    <strong>DELIVERY</strong>
+
+                    <span>
+                      Have your suit delivered
+                      to your preferred address.
+                    </span>
+
+                  </label>
+
+
+                  <input
+                    type="radio"
+                    name="fulfilment"
+                    id="collection"
+                    value="collection"
+                    class="fulfilment-radio">
+
+                  <label for="collection"
+                         class="fulfilment-card">
+
+                    <span class="fulfilment-icon">
+                      &#9671;
+                    </span>
+
+                    <strong>COLLECTION</strong>
+
+                    <span>
+                      Arrange to collect your suit
+                      at a suitable location.
+                    </span>
+
+                  </label>
+
+
+                  <!-- DELIVERY ADDRESS -->
+
+                  <div class="delivery-address">
+
+                    <h3>Delivery Address</h3>
+
+                    <div class="form-grid">
+
+                      <div class="form-group full-width">
+
+                        <label for="address">
+                          STREET ADDRESS
+                        </label>
+
+                        <input
+                          type="text"
+                          id="address"
+                          name="address"
+                          placeholder="House number and street">
+
+                      </div>
+
+
+                      <div class="form-group">
+
+                        <label for="city">CITY</label>
+
+                        <input
+                          type="text"
+                          id="city"
+                          name="city"
+                          placeholder="Your city">
+
+                      </div>
+
+
+                      <div class="form-group">
+
+                        <label for="postcode">
+                          POSTCODE
+                        </label>
+
+                        <input
+                          type="text"
+                          id="postcode"
+                          name="postcode"
+                          placeholder="Postcode">
+
+                      </div>
+
+
+                      <div class="form-group full-width">
+
+                        <label for="country">
+                          COUNTRY
+                        </label>
+
+                        <input
+                          type="text"
+                          id="country"
+                          name="country"
+                          placeholder="Your country">
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                  <!-- COLLECTION INFORMATION -->
+
+                  <div class="collection-information">
+
+                    <h3>Personal Collection</h3>
+
+                    <p>
+                      In a real order, our team would
+                      arrange a suitable collection
+                      location and time.
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- NOTES -->
+
+              <div class="order-notes">
+
+                <label for="notes">
+                  ADDITIONAL REQUESTS
+                </label>
+
+                <textarea
+                  id="notes"
+                  name="notes"
+                  rows="5"
+                  placeholder="Any special requests or instructions?"></textarea>
+
+              </div>
+
+            </section>
+
+
+            <!-- FINAL REVIEW -->
+
+            <section class="order-summary">
+
+              <p class="basket-eyebrow">
+                05 / FINAL REVIEW
+              </p>
+
+              <h2>
+                Order <span>Summary.</span>
+              </h2>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-row">
+                <span>Collection</span>
+                <strong>As selected above</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Signature Shade</span>
+                <strong>As selected above</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Fit and Size</span>
+                <strong>As selected above</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Delivery</span>
+                <strong>To be confirmed</strong>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-total">
+                <span>PRICE</span>
+                <strong>See Price Guide</strong>
+              </div>
+
+              <p class="summary-note">
+                This is a school-project demonstration.
+                No payment is taken, and no personal
+                information is submitted or stored.
+              </p>
+
+              <!--
+                HTML/CSS-only confirmation.
+
+                The button below does not submit
+                the form. It opens the demonstration
+                confirmation section instead.
+              -->
+
+              <label
+                for="step-confirmation"
+                class="checkout-button"
+                tabindex="0">
+
+                COMPLETE DEMONSTRATION
+
+                <span>&#8594;</span>
+
+              </label>
+
+              <p class="checkout-security">
+                DEMONSTRATION ONLY / NO PAYMENT
+              </p>
+
+            </section>
+
+          </form>
+
+        </section>
+
+      </div>
+
+
+      <!-- CONFIRMATION SECTION -->
+
+      <section class="basket-confirmation">
+
+        <div class="confirmation-icon">
+          &#10003;
+        </div>
+
+        <p class="basket-eyebrow">
+          STERNRITTERS / FINAL STAGE
+        </p>
+
+        <h2>
+          Your Selection.<br>
+          <span>Your Legacy.</span>
+        </h2>
+
+        <div class="basket-gold-line"></div>
+
+        <p class="confirmation-description">
+          You have reached the final stage of the
+          STERNRITTERS ordering demonstration.
+          In a live website, your request would
+          now be processed by our team.
+        </p>
+
+        <p class="confirmation-notice">
+          This is a demonstration confirmation.
+          No order has been placed, no payment
+          has been taken, and no details have
+          been sent or saved.
+        </p>
+
+        <label for="step-selection"
+               class="basket-primary-btn">
+          RETURN TO SELECTION &#8594;
+        </label>
+
+      </section>
+
+    </div>
+
+
+    <!-- CLOSING -->
+
+    <section class="basket-closing">
+
+      <p class="basket-eyebrow">
+        THE STERNRITTERS EXPERIENCE
+      </p>
+
+      <h2>
+        Crafted for You.<br>
+        <span>Defined by You.</span>
+      </h2>
+
+      <div class="basket-gold-line"></div>
+
+      <p>
+        Ur Suit. Ur Style. Ur Legacy.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2026 STERNRITTERS. All Rights Reserved.</p>
+    <p>London | Dubai | New York</p>
+  </footer>
+
+</body>
+</html>
+</body>
+</html>
