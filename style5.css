@@ -1757,3 +1757,123 @@ textarea:focus-visible {
   }
 
 }
+
+
+/* SHARED STERNRITTER HEADER ALIGNMENT */
+.site-header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 100px;
+  padding: 24px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #080808;
+  border-bottom: 1px solid rgba(229, 188, 104, 0.22);
+}
+.logo,
+.site-header .brand {
+  flex-shrink: 0;
+  color: #e5bc68;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.main-nav {
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px 24px;
+}
+.main-nav a {
+  color: #ddd4c5;
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  white-space: nowrap;
+}
+.main-nav a:hover,
+.main-nav a.active,
+.main-nav a[aria-current="page"] {
+  color: #e5bc68;
+}
+.header-actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.site-header .appointment-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 18px;
+  background: transparent;
+  color: #e5bc68;
+  border: 1px solid #e5bc68;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+}
+.site-header .appointment-btn:hover {
+  background: #e5bc68;
+  color: #080808;
+}
+@media (max-width: 1250px) {
+  .site-header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 18px;
+  }
+  .main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .site-header {
+    padding: 20px 5% 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    text-align: center;
+  }
+  .logo,
+  .site-header .brand {
+    font-size: clamp(20px, 5.5vw, 25px);
+    letter-spacing: 2.5px;
+    white-space: normal;
+  }
+  .main-nav {
+    order: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 8px 14px;
+  }
+  .main-nav a {
+    padding: 5px 2px;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+  }
+  .header-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  .site-header .appointment-btn {
+    min-height: 42px;
+    padding: 11px 20px;
+    font-size: 10px;
+  }
+}
