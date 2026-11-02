@@ -1,13 +1,8 @@
 /* STERNRITTER | SINGLE MASTER STYLESHEET
-   All six pages, separated by page-specific body classes.
-   HTML + CSS only. */
+   Six page-specific sections. HTML + CSS only. */
 
-
-/* =====================================================
-   index.html | imported from style1.css
-===================================================== */
-
-body.home-page /* ==========================================
+/* ================= index.html ================= */
+/* ==========================================
    STERNRITTERS
    HOMEPAGE - RESPONSIVE LUXURY DESIGN
    STYLE1.CSS
@@ -67,14 +62,13 @@ body.home-page a {
 body.home-page a:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 4px;
-}
-
-
-body.home-page /* ==========================================
+}/* ==========================================
    HEADER
 ========================================== */
 
-.site-header {
+
+
+body.home-page .site-header {
   position: relative;
   z-index: 10;
 
@@ -155,14 +149,13 @@ body.home-page .appointment-btn:hover {
   background: var(--gold);
   color: var(--dark);
   box-shadow: 0 0 20px rgba(229, 188, 104, 0.2);
-}
-
-
-body.home-page /* ==========================================
+}/* ==========================================
    HERO
 ========================================== */
 
-.hero {
+
+
+body.home-page .hero {
   position: relative;
   isolation: isolate;
 
@@ -292,12 +285,11 @@ body.home-page .btn-secondary:hover {
   color: var(--gold);
   border-color: var(--gold);
   background: rgba(229, 188, 104, 0.08);
-}
+}/* HERO SIDE DETAILS */
 
 
-body.home-page /* HERO SIDE DETAILS */
 
-.hero-side {
+body.home-page .hero-side {
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -347,14 +339,13 @@ body.home-page .hero-bottom {
 
 body.home-page .hero-bottom span:last-child {
   font-size: 20px;
-}
-
-
-body.home-page /* ==========================================
+}/* ==========================================
    FOUR FEATURES
 ========================================== */
 
-.features {
+
+
+body.home-page .features {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 
@@ -397,14 +388,13 @@ body.home-page .feature p {
   color: #a49b90;
   font-size: 12px;
   line-height: 1.6;
-}
-
-
-body.home-page /* ==========================================
+}/* ==========================================
    ABOUT US - SHARED DETAILS
 ========================================== */
 
-.home-page .about-eyebrow {
+
+
+body.home-page .home-page .about-eyebrow {
   color: var(--gold);
   font-size: 11px;
   font-weight: bold;
@@ -433,14 +423,13 @@ body.home-page .home-page .about-small-line {
   height: 2px;
   margin: 28px 0;
   background: var(--gold);
-}
-
-
-body.home-page /* ==========================================
+}/* ==========================================
    ABOUT US INTRODUCTION
 ========================================== */
 
-.home-page .about-intro {
+
+
+body.home-page .home-page .about-intro {
   padding: 115px 7% 100px;
   text-align: center;
 
@@ -474,14 +463,13 @@ body.home-page .home-page .about-intro > p:last-child {
   color: var(--muted);
   font-size: 15px;
   line-height: 2;
-}
-
-
-body.home-page /* ==========================================
+}/* ==========================================
    ABOUT US - IMAGE AND TEXT
 ========================================== */
 
-.home-page .about-section {
+
+
+body.home-page .home-page .about-section {
   width: 90%;
   max-width: 1450px;
   margin: 0 auto;
@@ -595,14 +583,13 @@ body.home-page .home-page .about-link {
 body.home-page .home-page .about-link:hover {
   color: white;
   border-color: white;
-}
-
-
-body.home-page /* ==========================================
+}/* ==========================================
    SIGNATURE SECTION
 ========================================== */
 
-.home-page .signature-section {
+
+
+body.home-page .home-page .signature-section {
   padding: 105px 5% 115px;
   text-align: center;
 
@@ -701,14 +688,13 @@ body.home-page .home-page .signature-button {
 body.home-page .home-page .signature-button:hover {
   background: var(--gold-light);
   transform: translateY(-2px);
-}
-
-
-body.home-page /* ==========================================
+}/* ==========================================
    FOOTER
 ========================================== */
 
-.site-footer {
+
+
+body.home-page .site-footer {
   margin-top: auto;
   padding: 30px 5%;
 
@@ -749,33 +735,33 @@ body.home-page .footer-links a:hover {
 }
 
 
-body.home-page /* ==========================================
+/* ==========================================
    TABLETS AND SMALL LAPTOPS
 ========================================== */
 
 @media (max-width: 1250px) {
 
-  .site-header {
+  body.home-page .site-header {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 18px;
   }
 
-  .main-nav {
+  body.home-page .main-nav {
     order: 3;
     width: 100%;
     justify-content: center;
   }
 
-  .features {
+  body.home-page .features {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .feature:nth-child(2) {
+  body.home-page .feature:nth-child(2) {
     border-right: none;
   }
 
-  .feature:nth-child(-n+2) {
+  body.home-page .feature:nth-child(-n+2) {
     border-bottom: 1px solid var(--border);
   }
 
@@ -826,15 +812,14 @@ body.home-page /* ==========================================
 }
 
 
-body.home-page /* ==========================================
+/* ==========================================
    MOBILE PHONES
 ========================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {/* HEADER */
 
-  /* HEADER */
 
-  .site-header {
+  body.home-page .site-header {
     padding: 20px 5% 18px;
     flex-direction: column;
     align-items: center;
@@ -843,13 +828,13 @@ body.home-page /* ==========================================
     text-align: center;
   }
 
-  .logo {
+  body.home-page .logo {
     font-size: clamp(20px, 5.5vw, 25px);
     letter-spacing: 2.5px;
     white-space: normal;
   }
 
-  .main-nav {
+  body.home-page .main-nav {
     order: 0;
     width: 100%;
 
@@ -860,28 +845,27 @@ body.home-page /* ==========================================
     gap: 8px 14px;
   }
 
-  .main-nav a {
+  body.home-page .main-nav a {
     padding: 5px 2px;
     font-size: 11px;
     line-height: 1.5;
     letter-spacing: 0.2px;
   }
 
-  .header-actions {
+  body.home-page .header-actions {
     width: 100%;
     justify-content: center;
   }
 
-  .appointment-btn {
+  body.home-page .appointment-btn {
     min-height: 42px;
     padding: 11px 20px;
     font-size: 10px;
-  }
+  }/* HERO */
 
 
-  /* HERO */
 
-  .hero {
+  body.home-page .hero {
     min-height: 0;
     min-height: 660px;
 
@@ -905,46 +889,45 @@ body.home-page /* ==========================================
     background-attachment: scroll;
   }
 
-  .hero-content {
+  body.home-page .hero-content {
     max-width: 100%;
     padding: 75px 7% 105px;
   }
 
-  .hero-subtext {
+  body.home-page .hero-subtext {
     margin-bottom: 25px;
     font-size: 9px;
     letter-spacing: 1.5px;
     line-height: 1.9;
   }
 
-  .hero h1 {
+  body.home-page .hero h1 {
     font-size: clamp(42px, 10vw, 64px);
     line-height: 1.12;
     letter-spacing: -1px;
     margin-bottom: 25px;
   }
 
-  .gold-line {
+  body.home-page .gold-line {
     width: 55px;
     margin-bottom: 24px;
   }
 
-  .hero-description {
+  body.home-page .hero-description {
     max-width: 440px;
     font-size: 13px;
     line-height: 1.85;
     margin-bottom: 28px;
   }
 
-  .hero-buttons {
+  body.home-page .hero-buttons {
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
     max-width: 340px;
   }
 
-  .btn-primary,
-  .btn-secondary {
+  body.home-page .btn-primary, body.home-page .btn-secondary {
     width: 100%;
     min-height: 50px;
     padding: 14px 16px;
@@ -952,82 +935,78 @@ body.home-page /* ==========================================
     letter-spacing: 0.9px;
   }
 
-  .hero-bottom {
+  body.home-page .hero-bottom {
     bottom: 23px;
     left: 7%;
     font-size: 9px;
-  }
+  }/* FEATURES */
 
 
-  /* FEATURES */
 
-  .features {
+  body.home-page .features {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 15px 5%;
   }
 
-  .feature {
+  body.home-page .feature {
     gap: 10px;
     padding: 20px 12px;
     border-bottom: 1px solid var(--border);
   }
 
-  .feature:nth-child(2n) {
+  body.home-page .feature:nth-child(2n) {
     border-right: none;
   }
 
-  .feature:nth-last-child(-n+2) {
+  body.home-page .feature:nth-last-child(-n+2) {
     border-bottom: none;
   }
 
-  .feature h3 {
+  body.home-page .feature h3 {
     font-size: 20px;
   }
 
-  .feature h2 {
+  body.home-page .feature h2 {
     font-size: 10px;
     letter-spacing: 0.7px;
   }
 
-  .feature p {
+  body.home-page .feature p {
     font-size: 11px;
-  }
+  }/* ABOUT INTRO */
 
 
-  /* ABOUT INTRO */
 
-  .home-page .about-intro {
+  body.home-page .home-page .about-intro {
     padding: 70px 6% 65px;
   }
 
-  .home-page .about-eyebrow1 {
+  body.home-page .home-page .about-eyebrow1 {
     font-size: clamp(43px, 12vw, 70px);
     line-height: 1.1;
     letter-spacing: -1px;
     margin-bottom: 18px;
   }
 
-  .home-page .about-eyebrow {
+  body.home-page .home-page .about-eyebrow {
     font-size: 10px;
     letter-spacing: 1.8px;
   }
 
-  .home-page .about-intro h2 {
+  body.home-page .home-page .about-intro h2 {
     font-size: clamp(30px, 8vw, 44px);
     line-height: 1.25;
     margin-top: 18px;
   }
 
-  .home-page .about-intro > p:last-child {
+  body.home-page .home-page .about-intro > p:last-child {
     font-size: 13px;
     line-height: 1.85;
-  }
+  }/* ABOUT SECTIONS */
 
 
-  /* ABOUT SECTIONS */
 
-  .home-page .about-section,
-  .home-page .about-section.about-reverse {
+  body.home-page .home-page .about-section, body.home-page .home-page .about-section.about-reverse {
     width: 90%;
     max-width: 550px;
     grid-template-columns: 1fr;
@@ -1035,164 +1014,159 @@ body.home-page /* ==========================================
     padding: 55px 0;
   }
 
-  .home-page .about-image img {
+  body.home-page .home-page .about-image img {
     width: 100%;
     height: auto;
   }
 
-  .home-page .about-content h2 {
+  body.home-page .home-page .about-content h2 {
     font-size: clamp(29px, 8vw, 42px);
     line-height: 1.3;
   }
 
-  .home-page .about-content > p:not(.about-eyebrow):not(.about-quote) {
+  body.home-page .home-page .about-content > p:not(.about-eyebrow):not(.about-quote) {
     font-size: 13px;
     line-height: 1.85;
     margin-bottom: 20px;
   }
 
-  .home-page .about-small-line {
+  body.home-page .home-page .about-small-line {
     margin: 22px 0;
   }
 
-  .home-page .about-quote {
+  body.home-page .home-page .about-quote {
     font-size: 17px;
     margin-top: 22px;
-  }
+  }/* SIGNATURE */
 
 
-  /* SIGNATURE */
 
-  .home-page .signature-section {
+  body.home-page .home-page .signature-section {
     padding: 70px 5% 80px;
   }
 
-  .home-page .signature-heading {
+  body.home-page .home-page .signature-heading {
     margin-bottom: 35px;
   }
 
-  .home-page .signature-heading h2 {
+  body.home-page .home-page .signature-heading h2 {
     font-size: clamp(32px, 8vw, 46px);
   }
 
-  .home-page .signature-heading > p:last-child {
+  body.home-page .home-page .signature-heading > p:last-child {
     font-size: 13px;
     line-height: 1.8;
   }
 
-  .home-page .signature-image img {
+  body.home-page .home-page .signature-image img {
     width: 100%;
     height: auto;
   }
 
-  .home-page .signature-ending {
+  body.home-page .home-page .signature-ending {
     margin-top: 42px;
   }
 
-  .home-page .signature-small {
+  body.home-page .home-page .signature-small {
     font-size: 9px;
     letter-spacing: 1.6px;
   }
 
-  .home-page .signature-ending h3 {
+  body.home-page .home-page .signature-ending h3 {
     font-size: clamp(30px, 8vw, 42px);
   }
 
-  .home-page .signature-button {
+  body.home-page .home-page .signature-button {
     max-width: 100%;
     min-height: 50px;
     padding: 15px 20px;
     font-size: 10px;
-  }
+  }/* FOOTER */
 
 
-  /* FOOTER */
 
-  .site-footer {
+  body.home-page .site-footer {
     flex-direction: column;
     gap: 15px;
     padding: 30px 6%;
     text-align: center;
   }
 
-  .footer-links {
+  body.home-page .footer-links {
     justify-content: center;
   }
 
 }
 
 
-body.home-page /* ==========================================
+/* ==========================================
    VERY SMALL PHONES
 ========================================== */
 
 @media (max-width: 400px) {
 
-  .site-header {
+  body.home-page .site-header {
     gap: 14px;
   }
 
-  .main-nav {
+  body.home-page .main-nav {
     gap: 7px 11px;
   }
 
-  .main-nav a {
+  body.home-page .main-nav a {
     font-size: 10px;
   }
 
-  .hero {
+  body.home-page .hero {
     min-height: 650px;
   }
 
-  .hero-content {
+  body.home-page .hero-content {
     padding: 65px 6% 95px;
   }
 
-  .hero h1 {
+  body.home-page .hero h1 {
     font-size: clamp(38px, 10vw, 45px);
   }
 
-  .hero-subtext {
+  body.home-page .hero-subtext {
     font-size: 8px;
     letter-spacing: 1px;
   }
 
-  .hero-description {
+  body.home-page .hero-description {
     font-size: 12px;
   }
 
-  .features {
+  body.home-page .features {
     grid-template-columns: 1fr;
   }
 
-  .feature,
-  .feature:nth-child(2n),
-  .feature:nth-last-child(-n+2) {
+  body.home-page .feature, body.home-page .feature:nth-child(2n), body.home-page .feature:nth-last-child(-n+2) {
     border-right: none;
     border-bottom: 1px solid var(--border);
   }
 
-  .feature:last-child {
+  body.home-page .feature:last-child {
     border-bottom: none;
   }
 
-  .home-page .about-intro h2,
-  .home-page .about-content h2 {
+  body.home-page .home-page .about-intro h2, body.home-page .home-page .about-content h2 {
     font-size: 29px;
   }
 
-  .home-page .signature-heading h2 {
+  body.home-page .home-page .signature-heading h2 {
     font-size: 31px;
   }
 
-  .home-page .signature-button {
+  body.home-page .home-page .signature-button {
     width: 100%;
   }
 
 }
 
 
-body.home-page /* ==========================================
+/* ==========================================
    REDUCED MOTION
 ========================================== */
 
@@ -1202,9 +1176,7 @@ body.home-page /* ==========================================
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     transition: none !important;
     animation: none !important;
   }
@@ -1212,11 +1184,8 @@ body.home-page /* ==========================================
 }
 
 
-/* =====================================================
-   Suits_Collection.html | imported from style2.css
-===================================================== */
-
-body.collections-page /* ==========================================
+/* ================= Suits_Collection.html ================= */
+/* ==========================================
    STERNRITTERS
    OUR COLLECTIONS - STYLE2.CSS
    RESPONSIVE LUXURY DESIGN
@@ -1231,9 +1200,8 @@ body.collections-page /* ==========================================
   --ivory: #f5f0e8;
   --muted: #bcb5aa;
   --border: rgba(229, 188, 104, 0.22);
-}
+}/* GLOBAL */
 
-body.collections-page /* GLOBAL */
 
 * {
   margin: 0;
@@ -1278,13 +1246,12 @@ body.collections-page a {
 body.collections-page a:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 4px;
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    HEADER - SAME AS HOMEPAGE
 ========================================== */
 
-.site-header {
+
+body.collections-page .site-header {
   position: relative;
   z-index: 10;
 
@@ -1365,13 +1332,12 @@ body.collections-page .appointment-btn:hover {
   background: var(--gold);
   color: var(--dark);
   box-shadow: 0 0 20px rgba(229, 188, 104, 0.2);
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    COLLECTIONS BACKGROUND
 ========================================== */
 
-.collections-page {
+
+body.collections-page .collections-page {
   background:
     radial-gradient(
       ellipse at 50% 15%,
@@ -1381,13 +1347,12 @@ body.collections-page /* ==========================================
     );
 
   color: var(--ivory);
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    INTRODUCTION
 ========================================== */
 
-.collections-page .collections-intro {
+
+body.collections-page .collections-page .collections-intro {
   max-width: 1000px;
   margin: 0 auto;
   padding: 100px 5% 75px;
@@ -1432,13 +1397,12 @@ body.collections-page .collections-page .collections-description {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.9;
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    COLLECTION GRID
 ========================================== */
 
-.collections-page .collection-grid {
+
+body.collections-page .collections-page .collection-grid {
   width: 90%;
   max-width: 1450px;
   margin: 0 auto;
@@ -1447,13 +1411,12 @@ body.collections-page /* ==========================================
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
   gap: 28px;
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    COLLECTION CARDS
 ========================================== */
 
-.collections-page .collection-card {
+
+body.collections-page .collections-page .collection-card {
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -1471,13 +1434,12 @@ body.collections-page .collections-page .collection-card:hover {
   transform: translateY(-6px);
   border-color: rgba(229, 188, 104, 0.65);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    COLLECTION IMAGES
 ========================================== */
 
-.collections-page .collection-image {
+
+body.collections-page .collections-page .collection-image {
   position: relative;
 
   width: 100%;
@@ -1517,11 +1479,10 @@ body.collections-page .collections-page .collection-image img {
 body.collections-page .collections-page .collection-card:hover img {
   transform: scale(1.025);
   filter: brightness(1.07);
-}
+}/* IMAGE LABELS */
 
-body.collections-page /* IMAGE LABELS */
 
-.collections-page .collection-number {
+body.collections-page .collections-page .collection-number {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -1543,13 +1504,12 @@ body.collections-page .collections-page .collection-edition {
   font-size: 10px;
   letter-spacing: 2px;
   text-shadow: 0 2px 10px #000;
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    COLLECTION INFORMATION
 ========================================== */
 
-.collections-page .collection-info {
+
+body.collections-page .collections-page .collection-info {
   flex: 1;
 
   display: flex;
@@ -1638,13 +1598,12 @@ body.collections-page .collections-page .collection-link:hover {
 
 body.collections-page .collections-page .collection-link:hover span {
   transform: translateX(4px);
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    COLLECTION PHILOSOPHY
 ========================================== */
 
-.collections-page .collections-philosophy {
+
+body.collections-page .collections-page .collections-philosophy {
   margin-top: 105px;
   padding: 110px 6% 100px;
   text-align: center;
@@ -1683,13 +1642,12 @@ body.collections-page .collections-page .collections-philosophy > p:last-child {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.9;
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    APPOINTMENT SECTION
 ========================================== */
 
-.collections-page .collections-cta {
+
+body.collections-page .collections-page .collections-cta {
   padding: 105px 5% 115px;
   text-align: center;
 }
@@ -1747,13 +1705,12 @@ body.collections-page .collections-page .collection-shades:hover {
 body.collections-page .collections-page .collection-appointment:hover {
   background: var(--gold-light);
   transform: translateY(-2px);
-}
-
-body.collections-page /* ==========================================
+}/* ==========================================
    FOOTER
 ========================================== */
 
-.site-footer {
+
+body.collections-page .site-footer {
   margin-top: auto;
   padding: 30px 5%;
 
@@ -1773,19 +1730,19 @@ body.collections-page .site-footer p {
   line-height: 1.8;
 }
 
-body.collections-page /* ==========================================
+/* ==========================================
    TABLETS / SMALL LAPTOPS
 ========================================== */
 
 @media (max-width: 1250px) {
 
-  .site-header {
+  body.collections-page .site-header {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 18px;
   }
 
-  .main-nav {
+  body.collections-page .main-nav {
     order: 3;
     width: 100%;
     justify-content: center;
@@ -1811,15 +1768,14 @@ body.collections-page /* ==========================================
 
 }
 
-body.collections-page /* ==========================================
+/* ==========================================
    MOBILE PHONES
 ========================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {/* HEADER - SAME AS HOMEPAGE */
 
-  /* HEADER - SAME AS HOMEPAGE */
 
-  .site-header {
+  body.collections-page .site-header {
     padding: 20px 5% 18px;
     flex-direction: column;
     align-items: center;
@@ -1828,13 +1784,13 @@ body.collections-page /* ==========================================
     text-align: center;
   }
 
-  .logo {
+  body.collections-page .logo {
     font-size: clamp(20px, 5.5vw, 25px);
     letter-spacing: 2.5px;
     white-space: normal;
   }
 
-  .main-nav {
+  body.collections-page .main-nav {
     order: 0;
     width: 100%;
     justify-content: center;
@@ -1842,119 +1798,113 @@ body.collections-page /* ==========================================
     gap: 8px 14px;
   }
 
-  .main-nav a {
+  body.collections-page .main-nav a {
     padding: 5px 2px;
     font-size: 11px;
     line-height: 1.5;
     letter-spacing: 0.2px;
   }
 
-  .header-actions {
+  body.collections-page .header-actions {
     width: 100%;
     justify-content: center;
   }
 
-  .appointment-btn {
+  body.collections-page .appointment-btn {
     min-height: 42px;
     padding: 11px 20px;
     font-size: 10px;
-  }
+  }/* COLLECTION INTRO */
 
 
-  /* COLLECTION INTRO */
 
-  .collections-page .collections-intro {
+  body.collections-page .collections-page .collections-intro {
     padding: 65px 6% 45px;
   }
 
-  .collections-page .collections-eyebrow {
+  body.collections-page .collections-page .collections-eyebrow {
     font-size: 10px;
     letter-spacing: 1.8px;
   }
 
-  .collections-page .collections-intro h1 {
+  body.collections-page .collections-page .collections-intro h1 {
     font-size: clamp(32px, 8vw, 48px);
     letter-spacing: 1px;
     overflow-wrap: break-word;
   }
 
-  .collections-page .collections-description {
+  body.collections-page .collections-page .collections-description {
     font-size: 13px;
     line-height: 1.85;
-  }
+  }/* COLLECTION GRID */
 
 
-  /* COLLECTION GRID */
 
-  .collections-page .collection-grid {
+  body.collections-page .collections-page .collection-grid {
     width: 90%;
     max-width: 480px;
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
-  .collections-page .collection-image {
+  body.collections-page .collections-page .collection-image {
     aspect-ratio: 4 / 5;
   }
 
-  .collections-page .collection-info {
+  body.collections-page .collections-page .collection-info {
     padding: 30px 22px 34px;
   }
 
-  .collections-page .collection-info h2 {
+  body.collections-page .collections-page .collection-info h2 {
     font-size: 27px;
   }
 
-  .collections-page .collection-description {
+  body.collections-page .collections-page .collection-description {
     font-size: 13px;
     line-height: 1.85;
-  }
+  }/* PHILOSOPHY */
 
 
-  /* PHILOSOPHY */
 
-  .collections-page .collections-philosophy {
+  body.collections-page .collections-page .collections-philosophy {
     margin-top: 75px;
     padding: 75px 6%;
   }
 
-  .collections-page .collections-philosophy h2 {
+  body.collections-page .collections-page .collections-philosophy h2 {
     font-size: clamp(28px, 7vw, 42px);
     letter-spacing: 0.5px;
   }
 
-  .collections-page .collections-philosophy > p:last-child {
+  body.collections-page .collections-page .collections-philosophy > p:last-child {
     font-size: 13px;
     line-height: 1.85;
-  }
+  }/* APPOINTMENT */
 
 
-  /* APPOINTMENT */
 
-  .collections-page .collections-cta {
+  body.collections-page .collections-page .collections-cta {
     padding: 75px 6% 85px;
   }
 
-  .collections-page .collections-cta h2 {
+  body.collections-page .collections-page .collections-cta h2 {
     font-size: clamp(28px, 7vw, 40px);
   }
 
-  .collections-page .collections-cta > p:not(.collections-eyebrow) {
+  body.collections-page .collections-page .collections-cta > p:not(.collections-eyebrow) {
     font-size: 13px;
   }
 
-  .collections-page .collection-shades,
-  .collections-page .collection-appointment {
+  body.collections-page .collections-page .collection-shades, body.collections-page .collections-page .collection-appointment {
     display: flex;
     width: 100%;
     max-width: 340px;
     margin: 12px auto;
-  }
+  }/* FOOTER */
 
 
-  /* FOOTER */
 
-  .site-footer {
+  body.collections-page .site-footer {
     flex-direction: column;
     padding: 30px 6%;
     gap: 14px;
@@ -1963,55 +1913,55 @@ body.collections-page /* ==========================================
 
 }
 
-body.collections-page /* ==========================================
+/* ==========================================
    VERY SMALL PHONES
 ========================================== */
 
 @media (max-width: 400px) {
 
-  .site-header {
+  body.collections-page .site-header {
     gap: 14px;
   }
 
-  .main-nav {
+  body.collections-page .main-nav {
     gap: 7px 11px;
   }
 
-  .main-nav a {
+  body.collections-page .main-nav a {
     font-size: 10px;
   }
 
-  .collections-page .collections-intro h1 {
+  body.collections-page .collections-page .collections-intro h1 {
     font-size: 30px;
   }
 
-  .collections-page .collection-grid {
+  body.collections-page .collections-page .collection-grid {
     width: 92%;
   }
 
-  .collections-page .collection-info {
+  body.collections-page .collections-page .collection-info {
     padding: 26px 16px 30px;
   }
 
-  .collections-page .collection-number {
+  body.collections-page .collections-page .collection-number {
     top: 14px;
     left: 14px;
   }
 
-  .collections-page .collection-edition {
+  body.collections-page .collections-page .collection-edition {
     bottom: 14px;
     left: 14px;
     font-size: 9px;
   }
 
-  .collections-page .collection-link {
+  body.collections-page .collections-page .collection-link {
     font-size: 9px;
     letter-spacing: 0.7px;
   }
 
 }
 
-body.collections-page /* ==========================================
+/* ==========================================
    REDUCED MOTION
 ========================================== */
 
@@ -2021,9 +1971,7 @@ body.collections-page /* ==========================================
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     transition: none !important;
     animation: none !important;
   }
@@ -2031,11 +1979,8 @@ body.collections-page /* ==========================================
 }
 
 
-/* =====================================================
-   Colours.html | imported from style3.css
-===================================================== */
-
-body.colours-page /* ==========================================
+/* ================= Colours.html ================= */
+/* ==========================================
    STERNRITTERS
    SIGNATURE SHADES - STYLE3.CSS
    RESPONSIVE LUXURY DESIGN
@@ -2050,11 +1995,10 @@ body.colours-page /* ==========================================
   --ivory: #f5f0e8;
   --muted: #bcb5aa;
   --border: rgba(229, 188, 104, 0.22);
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    GLOBAL STYLES
 ========================================== */
+
 
 * {
   margin: 0;
@@ -2101,13 +2045,12 @@ body.colours-page a {
 body.colours-page a:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 4px;
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    HEADER - SAME AS HOMEPAGE
 ========================================== */
 
-.site-header {
+
+body.colours-page .site-header {
   position: relative;
   z-index: 10;
 
@@ -2191,13 +2134,12 @@ body.colours-page .appointment-btn:hover {
   background: var(--gold);
   color: var(--dark);
   box-shadow: 0 0 20px rgba(229, 188, 104, 0.2);
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    PAGE INTRODUCTION
 ========================================== */
 
-.colours-intro {
+
+body.colours-page .colours-intro {
   padding: 95px 5% 70px;
   text-align: center;
 
@@ -2248,13 +2190,12 @@ body.colours-page .intro-description {
   color: #c7c1b7;
   font-size: 15px;
   line-height: 1.9;
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    SUIT CUSTOMISER
 ========================================== */
 
-.customiser {
+
+body.colours-page .customiser {
   width: 90%;
   max-width: 1350px;
   margin: 0 auto;
@@ -2267,22 +2208,20 @@ body.colours-page /* ==========================================
 
   align-items: center;
   gap: clamp(35px, 5vw, 75px);
-}
+}/* VISUALLY HIDDEN RADIO INPUTS */
 
-body.colours-page /* VISUALLY HIDDEN RADIO INPUTS */
 
-.customiser input[type="radio"] {
+body.colours-page .customiser input[type="radio"] {
   position: absolute;
   width: 1px;
   height: 1px;
   opacity: 0;
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    SUIT IMAGE PREVIEW
 ========================================== */
 
-.suit-preview {
+
+body.colours-page .suit-preview {
   position: relative;
   width: 100%;
   min-width: 0;
@@ -2306,14 +2245,13 @@ body.colours-page .suit-preview:hover {
   box-shadow:
     0 25px 75px rgba(0, 0, 0, 0.6),
     0 0 35px rgba(229, 188, 104, 0.1);
-}
-
-body.colours-page /*
+}/*
    CONTAIN PREVENTS THE SUIT FROM BEING CROPPED.
    THE FRAME REMAINS THE SAME SIZE FOR ALL SHADES.
 */
 
-.suit-image {
+
+body.colours-page .suit-image {
   position: absolute;
   inset: 0;
 
@@ -2329,18 +2267,16 @@ body.colours-page /*
 
   transition: opacity 0.45s ease,
               visibility 0.45s ease;
-}
+}/* SHOW SELECTED SUIT */
 
-body.colours-page /* SHOW SELECTED SUIT */
 
-#black:checked ~ .suit-preview .black-image, body.colours-page #ivory:checked ~ .suit-preview .ivory-image, body.colours-page #burgundy:checked ~ .suit-preview .burgundy-image, body.colours-page #green:checked ~ .suit-preview .green-image, body.colours-page #navy:checked ~ .suit-preview .navy-image {
+body.colours-page #black:checked ~ .suit-preview .black-image, body.colours-page #ivory:checked ~ .suit-preview .ivory-image, body.colours-page #burgundy:checked ~ .suit-preview .burgundy-image, body.colours-page #green:checked ~ .suit-preview .green-image, body.colours-page #navy:checked ~ .suit-preview .navy-image {
   opacity: 1;
   visibility: visible;
-}
+}/* IMAGE LABEL */
 
-body.colours-page /* IMAGE LABEL */
 
-.preview-label {
+body.colours-page .preview-label {
   position: absolute;
   bottom: 22px;
   left: 25px;
@@ -2355,13 +2291,12 @@ body.colours-page /* IMAGE LABEL */
 
   text-shadow: 0 2px 12px #000;
   pointer-events: none;
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    COLOUR PANEL
 ========================================== */
 
-.colour-panel {
+
+body.colours-page .colour-panel {
   min-width: 0;
   padding: 25px 0;
 }
@@ -2404,13 +2339,12 @@ body.colours-page .selection-heading {
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 2.5px;
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    COLOUR SWATCHES
 ========================================== */
 
-.swatches {
+
+body.colours-page .swatches {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -2440,11 +2374,10 @@ body.colours-page .swatch:hover {
   transform: scale(1.08);
   border-color: var(--gold);
   box-shadow: 0 0 15px rgba(229, 188, 104, 0.2);
-}
+}/* FIVE SIGNATURE SHADES */
 
-body.colours-page /* FIVE SIGNATURE SHADES */
 
-.swatch.black {
+body.colours-page .swatch.black {
   background: #171717;
 }
 
@@ -2462,26 +2395,23 @@ body.colours-page .swatch.green {
 
 body.colours-page .swatch.navy {
   background: #24354f;
-}
+}/* SELECTED SWATCH OUTLINE */
 
-body.colours-page /* SELECTED SWATCH OUTLINE */
 
-#black:checked ~ .colour-panel label[for="black"], body.colours-page #ivory:checked ~ .colour-panel label[for="ivory"], body.colours-page #burgundy:checked ~ .colour-panel label[for="burgundy"], body.colours-page #green:checked ~ .colour-panel label[for="green"], body.colours-page #navy:checked ~ .colour-panel label[for="navy"] {
+body.colours-page #black:checked ~ .colour-panel label[for="black"], body.colours-page #ivory:checked ~ .colour-panel label[for="ivory"], body.colours-page #burgundy:checked ~ .colour-panel label[for="burgundy"], body.colours-page #green:checked ~ .colour-panel label[for="green"], body.colours-page #navy:checked ~ .colour-panel label[for="navy"] {
   outline: 2px solid var(--gold);
   outline-offset: 5px;
   box-shadow: 0 0 15px rgba(229, 188, 104, 0.15);
-}
+}/* KEYBOARD FOCUS */
 
-body.colours-page /* KEYBOARD FOCUS */
 
-#black:focus-visible ~ .colour-panel label[for="black"], body.colours-page #ivory:focus-visible ~ .colour-panel label[for="ivory"], body.colours-page #burgundy:focus-visible ~ .colour-panel label[for="burgundy"], body.colours-page #green:focus-visible ~ .colour-panel label[for="green"], body.colours-page #navy:focus-visible ~ .colour-panel label[for="navy"] {
+body.colours-page #black:focus-visible ~ .colour-panel label[for="black"], body.colours-page #ivory:focus-visible ~ .colour-panel label[for="ivory"], body.colours-page #burgundy:focus-visible ~ .colour-panel label[for="burgundy"], body.colours-page #green:focus-visible ~ .colour-panel label[for="green"], body.colours-page #navy:focus-visible ~ .colour-panel label[for="navy"] {
   outline: 2px dashed var(--gold-light);
   outline-offset: 7px;
-}
+}/* SCREEN READER LABEL TEXT */
 
-body.colours-page /* SCREEN READER LABEL TEXT */
 
-.sr-only {
+body.colours-page .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -2491,13 +2421,12 @@ body.colours-page /* SCREEN READER LABEL TEXT */
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    SELECTED COLOUR NAME
 ========================================== */
 
-.selected-colour {
+
+body.colours-page .selected-colour {
   min-height: 70px;
   padding-top: 30px;
 }
@@ -2523,13 +2452,12 @@ body.colours-page .exclusive-note {
   font-size: 10px;
   letter-spacing: 1.8px;
   line-height: 1.7;
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    CONTINUE BUTTON
 ========================================== */
 
-.continue-btn {
+
+body.colours-page .continue-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2560,13 +2488,12 @@ body.colours-page .continue-btn span {
 
 body.colours-page .continue-btn:hover span {
   transform: translateX(4px);
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    CLOSING SECTION
 ========================================== */
 
-.closing-section {
+
+body.colours-page .closing-section {
   padding: 85px 5% 100px;
   text-align: center;
 
@@ -2599,13 +2526,12 @@ body.colours-page .closing-section h2 {
 body.colours-page .closing-section h2 span {
   color: var(--gold);
   font-style: italic;
-}
-
-body.colours-page /* ==========================================
+}/* ==========================================
    FOOTER
 ========================================== */
 
-.site-footer {
+
+body.colours-page .site-footer {
   margin-top: auto;
   padding: 30px 5%;
 
@@ -2646,19 +2572,19 @@ body.colours-page .footer-links a:hover {
   color: var(--gold);
 }
 
-body.colours-page /* ==========================================
+/* ==========================================
    TABLETS AND SMALL LAPTOPS
 ========================================== */
 
 @media (max-width: 1250px) {
 
-  .site-header {
+  body.colours-page .site-header {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 18px;
   }
 
-  .main-nav {
+  body.colours-page .main-nav {
     order: 3;
     width: 100%;
     justify-content: center;
@@ -2679,15 +2605,14 @@ body.colours-page /* ==========================================
 
 }
 
-body.colours-page /* ==========================================
+/* ==========================================
    MOBILE PHONES
 ========================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {/* HEADER - SAME AS HOMEPAGE */
 
-  /* HEADER - SAME AS HOMEPAGE */
 
-  .site-header {
+  body.colours-page .site-header {
     padding: 20px 5% 18px;
     flex-direction: column;
     align-items: center;
@@ -2696,13 +2621,13 @@ body.colours-page /* ==========================================
     text-align: center;
   }
 
-  .logo {
+  body.colours-page .logo {
     font-size: clamp(20px, 5.5vw, 25px);
     letter-spacing: 2.5px;
     white-space: normal;
   }
 
-  .main-nav {
+  body.colours-page .main-nav {
     order: 0;
     width: 100%;
     justify-content: center;
@@ -2710,50 +2635,48 @@ body.colours-page /* ==========================================
     gap: 8px 14px;
   }
 
-  .main-nav a {
+  body.colours-page .main-nav a {
     padding: 5px 2px;
     font-size: 11px;
     line-height: 1.5;
     letter-spacing: 0.2px;
   }
 
-  .header-actions {
+  body.colours-page .header-actions {
     width: 100%;
     justify-content: center;
   }
 
-  .appointment-btn {
+  body.colours-page .appointment-btn {
     min-height: 42px;
     padding: 11px 20px;
     font-size: 10px;
-  }
+  }/* INTRODUCTION */
 
 
-  /* INTRODUCTION */
 
-  .colours-intro {
+  body.colours-page .colours-intro {
     padding: 65px 6% 45px;
   }
 
-  .section-subtitle {
+  body.colours-page .section-subtitle {
     font-size: 10px;
     letter-spacing: 1.8px;
   }
 
-  .colours-intro h1 {
+  body.colours-page .colours-intro h1 {
     font-size: clamp(36px, 9vw, 52px);
     line-height: 1.2;
   }
 
-  .intro-description {
+  body.colours-page .intro-description {
     font-size: 13px;
     line-height: 1.85;
-  }
+  }/* CUSTOMISER */
 
 
-  /* CUSTOMISER */
 
-  .customiser {
+  body.colours-page .customiser {
     width: 88%;
     max-width: 520px;
 
@@ -2763,123 +2686,121 @@ body.colours-page /* ==========================================
     padding: 20px 0 75px;
   }
 
-  .suit-preview {
+  body.colours-page .suit-preview {
     aspect-ratio: 4 / 5;
   }
 
-  .colour-panel {
+  body.colours-page .colour-panel {
     padding: 0;
     text-align: center;
   }
 
-  .colour-panel h2 {
+  body.colours-page .colour-panel h2 {
     margin: 18px 0;
     font-size: clamp(32px, 8vw, 44px);
   }
 
-  .panel-description {
+  body.colours-page .panel-description {
     margin: 0 auto;
     font-size: 13px;
     line-height: 1.85;
   }
 
-  .divider {
+  body.colours-page .divider {
     margin: 28px 0;
   }
 
-  .selection-heading {
+  body.colours-page .selection-heading {
     font-size: 10px;
     letter-spacing: 2px;
     margin-bottom: 25px;
   }
 
-  .swatches {
+  body.colours-page .swatches {
     justify-content: center;
     gap: 20px;
   }
 
-  .selected-colour {
+  body.colours-page .selected-colour {
     min-height: 65px;
     padding-top: 28px;
   }
 
-  .colour-name {
+  body.colours-page .colour-name {
     font-size: 13px;
     letter-spacing: 2px;
   }
 
-  .exclusive-note {
+  body.colours-page .exclusive-note {
     margin-bottom: 28px;
     font-size: 9px;
   }
 
-  .continue-btn {
+  body.colours-page .continue-btn {
     width: 100%;
     max-width: 360px;
     min-height: 52px;
     padding: 15px 18px;
     font-size: 10px;
-  }
+  }/* CLOSING SECTION */
 
 
-  /* CLOSING SECTION */
 
-  .closing-section {
+  body.colours-page .closing-section {
     padding: 70px 6% 80px;
   }
 
-  .closing-section h2 {
+  body.colours-page .closing-section h2 {
     font-size: clamp(28px, 7vw, 42px);
-  }
+  }/* FOOTER */
 
 
-  /* FOOTER */
 
-  .site-footer {
+  body.colours-page .site-footer {
     flex-direction: column;
     padding: 30px 6%;
     gap: 14px;
     text-align: center;
   }
 
-  .footer-links {
+  body.colours-page .footer-links {
     justify-content: center;
   }
 
 }
 
-body.colours-page /* ==========================================
+/* ==========================================
    VERY SMALL PHONES
 ========================================== */
 
 @media (max-width: 400px) {
 
-  .site-header {
+  body.colours-page .site-header {
     gap: 14px;
   }
 
-  .main-nav {
+  body.colours-page .main-nav {
     gap: 7px 11px;
   }
 
-  .main-nav a {
+  body.colours-page .main-nav a {
     font-size: 10px;
   }
 
-  .colours-intro h1 {
+  body.colours-page .colours-intro h1 {
     font-size: 34px;
   }
 
-  .swatches {
+  body.colours-page .swatches {
     gap: 14px;
   }
 
-  .swatch {
+  body.colours-page .swatch {
     width: 44px;
     height: 44px;
   }
 
-  .preview-label {
+  body.colours-page .preview-label {
     left: 15px;
     bottom: 15px;
     max-width: calc(100% - 30px);
@@ -2887,19 +2808,19 @@ body.colours-page /* ==========================================
     letter-spacing: 1px;
   }
 
-  .continue-btn {
+  body.colours-page .continue-btn {
     gap: 12px;
     padding: 14px 12px;
     font-size: 9px;
   }
 
-  .closing-section > p {
+  body.colours-page .closing-section > p {
     letter-spacing: 2px;
   }
 
 }
 
-body.colours-page /* ==========================================
+/* ==========================================
    REDUCED MOTION
 ========================================== */
 
@@ -2909,9 +2830,7 @@ body.colours-page /* ==========================================
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     transition: none !important;
     animation: none !important;
   }
@@ -2919,11 +2838,8 @@ body.colours-page /* ==========================================
 }
 
 
-/* =====================================================
-   Size_Ur_Suit.html | imported from style4.css
-===================================================== */
-
-body.size-guide-page /* ==========================================
+/* ================= Size_Ur_Suit.html ================= */
+/* ==========================================
    STERNRITTERS - SIZE GUIDE
    COMPLETE STYLE4.CSS
 ========================================== */
@@ -2937,9 +2853,8 @@ body.size-guide-page /* ==========================================
   --white: #f3eee7;
   --muted: #b7afa4;
   --line: rgba(229, 188, 104, 0.22);
-}
+}/* GLOBAL */
 
-body.size-guide-page /* GLOBAL */
 
 * {
   box-sizing: border-box;
@@ -2986,13 +2901,12 @@ body.size-guide-page h1, body.size-guide-page h2, body.size-guide-page h3, body.
 body.size-guide-page a:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 4px;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    HEADER
 ========================================== */
 
-.site-header {
+
+body.size-guide-page .site-header {
   position: relative;
   z-index: 10;
 
@@ -3076,13 +2990,12 @@ body.size-guide-page .site-header .appointment-btn {
 body.size-guide-page .site-header .appointment-btn:hover {
   background: var(--gold);
   color: #080808;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    HERO
 ========================================== */
 
-.hero {
+
+body.size-guide-page .hero {
   padding: clamp(85px, 12vw, 150px) 5% 95px;
   text-align: center;
 
@@ -3147,13 +3060,12 @@ body.size-guide-page .text-link {
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    SECTION NAVIGATION
 ========================================== */
 
-.section-index {
+
+body.size-guide-page .section-index {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
@@ -3190,13 +3102,12 @@ body.size-guide-page .section-index span {
 
   color: var(--gold);
   font-size: 11px;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    GENERAL SECTIONS
 ========================================== */
 
-.section {
+
+body.size-guide-page .section {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
@@ -3213,13 +3124,12 @@ body.size-guide-page .section-heading > p:last-child {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.9;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    BESPOKE MEASUREMENTS
 ========================================== */
 
-.feature-image {
+
+body.size-guide-page .feature-image {
   width: 100%;
   max-width: 890px;
   margin: 0 auto 35px;
@@ -3281,13 +3191,12 @@ body.size-guide-page .measurement-grid p {
 
   color: var(--muted);
   font-size: 13px;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    CHOOSE YOUR FIT
 ========================================== */
 
-.section-fits {
+
+body.size-guide-page .section-fits {
   max-width: none;
 
   background: #111;
@@ -3353,13 +3262,12 @@ body.size-guide-page .fit-copy p {
 
   color: var(--muted);
   font-size: 14px;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    STANDARD SIZING VIEWS
 ========================================== */
 
-.view-grid {
+
+body.size-guide-page .view-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
@@ -3389,13 +3297,12 @@ body.size-guide-page .view-grid figcaption {
   color: var(--gold);
   text-transform: uppercase;
   letter-spacing: 0.18em;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    SIZE CHART
 ========================================== */
 
-.size-table-wrap {
+
+body.size-guide-page .size-table-wrap {
   min-width: 0;
   max-width: 100%;
   margin-top: 55px;
@@ -3454,13 +3361,12 @@ body.size-guide-page tbody tr:hover {
 
 body.size-guide-page .table-note {
   margin: 20px 0 0;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    BESPOKE EXPERIENCE
 ========================================== */
 
-.experience {
+
+body.size-guide-page .experience {
   max-width: none;
   padding: 0;
 
@@ -3543,13 +3449,12 @@ body.size-guide-page .primary-btn {
 body.size-guide-page .primary-btn:hover {
   background: var(--gold);
   color: #111;
-}
-
-body.size-guide-page /* ==========================================
+}/* ==========================================
    FOOTER
 ========================================== */
 
-.site-footer {
+
+body.size-guide-page .site-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3571,19 +3476,19 @@ body.size-guide-page .site-footer a:hover {
   color: var(--white);
 }
 
-body.size-guide-page /* ==========================================
+/* ==========================================
    TABLETS
 ========================================== */
 
 @media (max-width: 1250px) {
 
-  .site-header {
+  body.size-guide-page .site-header {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 18px;
   }
 
-  .main-nav {
+  body.size-guide-page .main-nav {
     order: 3;
     width: 100%;
     justify-content: center;
@@ -3603,13 +3508,13 @@ body.size-guide-page /* ==========================================
 
 }
 
-body.size-guide-page /* ==========================================
+/* ==========================================
    MOBILE
 ========================================== */
 
 @media (max-width: 700px) {
 
-  .site-header {
+  body.size-guide-page .site-header {
     padding: 20px 5% 18px;
 
     flex-direction: column;
@@ -3620,7 +3525,7 @@ body.size-guide-page /* ==========================================
     text-align: center;
   }
 
-  .site-header .brand {
+  body.size-guide-page .site-header .brand {
     width: auto;
 
     font-size: clamp(20px, 5.5vw, 25px);
@@ -3628,7 +3533,7 @@ body.size-guide-page /* ==========================================
     white-space: normal;
   }
 
-  .main-nav {
+  body.size-guide-page .main-nav {
     order: 0;
     width: 100%;
     justify-content: center;
@@ -3636,7 +3541,7 @@ body.size-guide-page /* ==========================================
     gap: 8px 14px;
   }
 
-  .main-nav a {
+  body.size-guide-page .main-nav a {
     padding: 5px 2px;
 
     font-size: 11px;
@@ -3644,123 +3549,121 @@ body.size-guide-page /* ==========================================
     letter-spacing: 0.2px;
   }
 
-  .header-actions {
+  body.size-guide-page .header-actions {
     width: 100%;
     justify-content: center;
   }
 
-  .site-header .appointment-btn {
+  body.size-guide-page .site-header .appointment-btn {
     min-height: 42px;
     padding: 11px 20px;
     font-size: 10px;
   }
 
-  .hero {
+  body.size-guide-page .hero {
     padding: 75px 6% 65px;
   }
 
-  .hero h1 {
+  body.size-guide-page .hero h1 {
     font-size: clamp(36px, 9vw, 52px);
     line-height: 1.2;
     letter-spacing: 0;
   }
 
-  .hero > p:not(.eyebrow) {
+  body.size-guide-page .hero > p:not(.eyebrow) {
     font-size: 13px;
   }
 
-  .eyebrow {
+  body.size-guide-page .eyebrow {
     font-size: 10px;
     letter-spacing: 1.8px;
   }
 
-  .section-index {
+  body.size-guide-page .section-index {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
     padding: 18px 5%;
   }
 
-  .section-index a {
+  body.size-guide-page .section-index a {
     min-height: 85px;
     padding: 14px 12px;
     font-size: 11px;
   }
 
-  .section {
+  body.size-guide-page .section {
     padding: 65px 6%;
   }
 
-  .section-heading {
+  body.size-guide-page .section-heading {
     margin-bottom: 35px;
   }
 
-  .section-heading h2 {
+  body.size-guide-page .section-heading h2 {
     font-size: clamp(31px, 8vw, 44px);
   }
 
-  .section-heading > p:last-child {
+  body.size-guide-page .section-heading > p:last-child {
     font-size: 13px;
   }
 
-  .measurement-grid {
+  body.size-guide-page .measurement-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }
 
-  .measurement-grid article {
+  body.size-guide-page .measurement-grid article {
     padding: 18px 15px;
   }
 
-  .measurement-grid h3 {
+  body.size-guide-page .measurement-grid h3 {
     font-size: 18px;
   }
 
-  .measurement-grid p {
+  body.size-guide-page .measurement-grid p {
     font-size: 12px;
   }
 
-  .fit-grid,
-  .view-grid {
+  body.size-guide-page .fit-grid, body.size-guide-page .view-grid {
     grid-template-columns: minmax(0, 1fr);
     max-width: 440px;
     gap: 25px;
     margin-inline: auto;
   }
 
-  .fit-card > img,
-  .view-grid img {
+  body.size-guide-page .fit-card > img, body.size-guide-page .view-grid img {
     aspect-ratio: 3 / 4;
   }
 
-  .fit-copy h3 {
+  body.size-guide-page .fit-copy h3 {
     font-size: 26px;
   }
 
-  .fit-copy p {
+  body.size-guide-page .fit-copy p {
     font-size: 13px;
   }
 
-  .size-table-wrap {
+  body.size-guide-page .size-table-wrap {
     margin-top: 45px;
     padding: 18px 14px;
   }
 
-  .table-intro h3 {
+  body.size-guide-page .table-intro h3 {
     font-size: 23px;
   }
 
-  th, td {
+  body.size-guide-page th, body.size-guide-page td {
     padding: 13px 12px;
     font-size: 12px;
   }
 
-  .experience {
+  body.size-guide-page .experience {
     grid-template-columns: minmax(0, 1fr);
     gap: 0;
     padding: 0;
   }
 
-  .experience-placeholder {
+  body.size-guide-page .experience-placeholder {
     min-height: 320px;
     padding: 30px 6%;
 
@@ -3768,22 +3671,22 @@ body.size-guide-page /* ==========================================
     border-bottom: 1px solid var(--line);
   }
 
-  .experience-copy {
+  body.size-guide-page .experience-copy {
     width: 100%;
     max-width: 600px;
     padding: 55px 6% 65px;
     margin: 0 auto;
   }
 
-  .experience-copy h2 {
+  body.size-guide-page .experience-copy h2 {
     font-size: clamp(31px, 8vw, 44px);
   }
 
-  .experience-copy p:not(.eyebrow) {
+  body.size-guide-page .experience-copy p:not(.eyebrow) {
     font-size: 13px;
   }
 
-  .site-footer {
+  body.size-guide-page .site-footer {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
@@ -3793,54 +3696,54 @@ body.size-guide-page /* ==========================================
 
 }
 
-body.size-guide-page /* ==========================================
+/* ==========================================
    VERY SMALL PHONES
 ========================================== */
 
 @media (max-width: 400px) {
 
-  .site-header {
+  body.size-guide-page .site-header {
     gap: 14px;
   }
 
-  .site-header .brand {
+  body.size-guide-page .site-header .brand {
     font-size: 20px;
     letter-spacing: 2px;
   }
 
-  .main-nav {
+  body.size-guide-page .main-nav {
     gap: 7px 11px;
   }
 
-  .main-nav a {
+  body.size-guide-page .main-nav a {
     font-size: 10px;
   }
 
-  .section-index {
+  body.size-guide-page .section-index {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .section-index a {
+  body.size-guide-page .section-index a {
     padding: 12px 9px;
     font-size: 10px;
   }
 
-  .measurement-grid {
+  body.size-guide-page .measurement-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .hero h1 {
+  body.size-guide-page .hero h1 {
     font-size: 34px;
   }
 
-  .primary-btn {
+  body.size-guide-page .primary-btn {
     width: 100%;
     font-size: 10px;
   }
 
 }
 
-body.size-guide-page /* ==========================================
+/* ==========================================
    REDUCED MOTION
 ========================================== */
 
@@ -3850,18 +3753,16 @@ body.size-guide-page /* ==========================================
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     transition: none !important;
     animation: none !important;
   }
 
-}
+}/* SHARED STERNRITTER HEADER ALIGNMENT */
 
 
-body.size-guide-page /* SHARED STERNRITTER HEADER ALIGNMENT */
-.site-header {
+
+body.size-guide-page .site-header {
   position: relative;
   z-index: 10;
   width: 100%;
@@ -3976,15 +3877,11 @@ body.size-guide-page .site-header .appointment-btn:hover {
 }
 
 
-/* =====================================================
-   Basket.html | imported from style5.css
-===================================================== */
-
-body.basket-page /* ==========================================
+/* ================= Basket.html ================= */
+/* ==========================================
    STERNRITTERS
    BASKET PAGE - HTML & CSS ONLY
 ========================================== */
-
 /* GLOBAL */
 
 * {
@@ -4018,12 +3915,11 @@ body.basket-page /* ==========================================
   
   body.basket-page button, body.basket-page input, body.basket-page textarea, body.basket-page select {
     font: inherit;
-  }
+  }/* HEADER */
+
   
   
-  body.basket-page /* HEADER */
-  
-  .site-header {
+  body.basket-page .site-header {
     width: 100%;
     min-height: 100px;
     padding: 25px 5%;
@@ -4085,12 +3981,11 @@ body.basket-page /* ==========================================
   body.basket-page .appointment-btn:hover {
     background: #e5bc68;
     color: #080808;
-  }
+  }/* SHARED TYPOGRAPHY */
+
   
  
-  body.basket-page /* SHARED TYPOGRAPHY */
-  
-  .basket-eyebrow {
+  body.basket-page .basket-eyebrow {
     color: #e5bc68;
     font-size: 11px;
     font-weight: bold;
@@ -4125,12 +4020,11 @@ body.basket-page /* ==========================================
     line-height: 1.9;
     max-width: 700px;
     margin-bottom: 35px;
-  }
+  }/* HERO */
+
   
   
-  body.basket-page /* HERO */
-  
-  .basket-hero {
+  body.basket-page .basket-hero {
     width: 100%;
     min-height: 560px;
     display: grid;
@@ -4209,12 +4103,11 @@ body.basket-page /* ==========================================
     height: 100%;
     object-fit: cover;
     object-position: center;
-  }
+  }/* INTRODUCTION */
+
   
   
-  body.basket-page /* INTRODUCTION */
-  
-  .basket-intro {
+  body.basket-page .basket-intro {
     padding: 90px 6% 75px;
     text-align: center;
     background: radial-gradient(
@@ -4242,12 +4135,11 @@ body.basket-page /* ==========================================
     color: #bcb5aa;
     font-size: 14px;
     line-height: 1.9;
-  }
+  }/* BASKET WORKFLOW */
+
   
   
-  body.basket-page /* BASKET WORKFLOW */
-  
-  .basket-container {
+  body.basket-page .basket-container {
     width: 90%;
     max-width: 1250px;
     margin: 0 auto;
@@ -4279,12 +4171,11 @@ body.basket-page /* ==========================================
   
   body.basket-page #step-confirmation:checked ~ .basket-confirmation {
     display: flex;
-  }
+  }/* COLLECTION CARDS */
+
   
   
-  body.basket-page /* COLLECTION CARDS */
-  
-  .collection-section {
+  body.basket-page .collection-section {
     padding: 55px 0 85px;
   }
   
@@ -4351,12 +4242,11 @@ body.basket-page /* ==========================================
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
-  }
+  }/* CUSTOMISATION */
+
   
   
-  body.basket-page /* CUSTOMISATION */
-  
-  .customisation-section {
+  body.basket-page .customisation-section {
     padding: 65px;
     background: linear-gradient(
       135deg,
@@ -4412,12 +4302,11 @@ body.basket-page /* ==========================================
   
   body.basket-page .full-width {
     grid-column: 1 / -1;
-  }
+  }/* PRICE GUIDE */
+
   
   
-  body.basket-page /* PRICE GUIDE */
-  
-  .price-reference {
+  body.basket-page .price-reference {
     margin-top: 45px;
     padding: 35px;
     background: linear-gradient(
@@ -4454,21 +4343,19 @@ body.basket-page /* ==========================================
     font-size: 12px;
     line-height: 1.9;
     margin-top: 25px;
-  }
+  }/* PERSONAL DETAILS */
+
   
   
-  body.basket-page /* PERSONAL DETAILS */
-  
-  .details-section {
+  body.basket-page .details-section {
     margin-top: 90px;
     padding-top: 60px;
     border-top: 1px solid rgba(229,188,104,0.2);
-  }
+  }/* DELIVERY / COLLECTION */
+
   
   
-  body.basket-page /* DELIVERY / COLLECTION */
-  
-  .delivery-section {
+  body.basket-page .delivery-section {
     margin-top: 85px;
   }
   
@@ -4528,12 +4415,11 @@ body.basket-page /* ==========================================
   body.basket-page .fulfilment-radio:focus-visible + .fulfilment-card {
     outline: 2px solid #e5bc68;
     outline-offset: 4px;
-  }
+  }/* CONDITIONAL ADDRESS */
+
   
   
-  body.basket-page /* CONDITIONAL ADDRESS */
-  
-  .delivery-address, body.basket-page .collection-information {
+  body.basket-page .delivery-address, body.basket-page .collection-information {
     display: none;
     grid-column: 1 / -1;
     padding: 35px;
@@ -4561,12 +4447,11 @@ body.basket-page /* ==========================================
     color: #aaa39a;
     font-size: 14px;
     line-height: 1.9;
-  }
+  }/* NOTES */
+
   
   
-  body.basket-page /* NOTES */
-  
-  .order-notes {
+  body.basket-page .order-notes {
     margin-top: 45px;
   }
   
@@ -4578,12 +4463,11 @@ body.basket-page /* ==========================================
   body.basket-page .order-notes textarea {
     resize: vertical;
     min-height: 130px;
-  }
+  }/* ORDER SUMMARY */
+
   
   
-  body.basket-page /* ORDER SUMMARY */
-  
-  .order-summary {
+  body.basket-page .order-summary {
     max-width: 750px;
     margin: 80px auto 0;
     padding: 55px;
@@ -4686,12 +4570,11 @@ body.basket-page /* ==========================================
     line-height: 1.8;
     text-align: center;
     margin-top: 22px;
-  }
+  }/* CONFIRMATION */
+
   
   
-  body.basket-page /* CONFIRMATION */
-  
-  .basket-confirmation {
+  body.basket-page .basket-confirmation {
     min-height: 650px;
     flex-direction: column;
     align-items: center;
@@ -4750,12 +4633,11 @@ body.basket-page /* ==========================================
     font-size: 12px;
     line-height: 1.9;
     margin: 30px 0;
-  }
+  }/* PRIMARY BUTTON */
+
   
   
-  body.basket-page /* PRIMARY BUTTON */
-  
-  .basket-primary-btn {
+  body.basket-page .basket-primary-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -4775,12 +4657,11 @@ body.basket-page /* ==========================================
     background: #f4d998;
     transform: translateY(-3px);
     box-shadow: 0 0 25px rgba(229,188,104,0.3);
-  }
+  }/* CLOSING */
+
   
   
-  body.basket-page /* CLOSING */
-  
-  .basket-closing {
+  body.basket-page .basket-closing {
     padding: 110px 6%;
     text-align: center;
     background: radial-gradient(
@@ -4814,12 +4695,11 @@ body.basket-page /* ==========================================
     font-family: Georgia, serif;
     font-size: 18px;
     font-style: italic;
-  }
+  }/* FOOTER */
+
   
   
-  body.basket-page /* FOOTER */
-  
-  .site-footer {
+  body.basket-page .site-footer {
     margin-top: auto;
     background: #050505;
     padding: 28px 5%;
@@ -4856,86 +4736,86 @@ body.basket-page /* ==========================================
   }
   
   
-  body.basket-page /* TABLET */
+  /* TABLET */
   
   @media (max-width: 1100px) {
   
-    .site-header {
+    body.basket-page .site-header {
       flex-wrap: wrap;
       justify-content: center;
     }
   
-    .main-nav {
+    body.basket-page .main-nav {
       order: 3;
       width: 100%;
       gap: 18px;
     }
   
-    .basket-hero-content {
+    body.basket-page .basket-hero-content {
       padding-left: 7%;
     }
   
-    .customisation-section {
+    body.basket-page .customisation-section {
       padding: 45px;
     }
   
   }
   
   
-  body.basket-page /* MOBILE */
+  /* MOBILE */
   
   @media (max-width: 700px) {
   
-    .site-header {
+    body.basket-page .site-header {
       padding: 22px 5%;
     }
   
-    .logo {
+    body.basket-page .logo {
       font-size: 23px;
     }
   
-    .main-nav {
+    body.basket-page .main-nav {
       gap: 12px 18px;
     }
   
-    .main-nav a {
+    body.basket-page .main-nav a {
       font-size: 10px;
     }
   
-    .appointment-btn {
+    body.basket-page .appointment-btn {
       padding: 11px 14px;
       font-size: 10px;
     }
   
-    .basket-hero {
+    body.basket-page .basket-hero {
       grid-template-columns: 1fr;
       min-height: auto;
     }
   
-    .basket-hero-content {
+    body.basket-page .basket-hero-content {
       padding: 65px 7% 45px;
     }
   
-    .basket-hero h1 {
+    body.basket-page .basket-hero h1 {
       font-size: clamp(48px,11vw,70px);
     }
   
-    .basket-hero-description {
+    body.basket-page .basket-hero-description {
       font-size: 13px;
     }
   
-    .basket-hero-image {
+    body.basket-page .basket-hero-image {
       min-height: 0;
       height: auto;
     }
   
-    .basket-hero-image img {
+    body.basket-page .basket-hero-image img {
       width: 100%;
       height: auto;
       object-fit: contain;
     }
   
-    .basket-hero-image::after {
+    body.basket-page .basket-hero-image::after {
       background: linear-gradient(
         to bottom,
         #100b0b,
@@ -4943,120 +4823,117 @@ body.basket-page /* ==========================================
       );
     }
   
-    .basket-intro {
+    body.basket-page .basket-intro {
       padding: 65px 6% 50px;
     }
   
-    .basket-intro h2 {
+    body.basket-page .basket-intro h2 {
       font-size: clamp(32px,8vw,45px);
     }
   
-    .basket-container {
+    body.basket-page .basket-container {
       width: 92%;
       padding-bottom: 75px;
     }
   
-    .collection-section {
+    body.basket-page .collection-section {
       padding: 40px 0 60px;
     }
   
-    .collection-grid {
+    body.basket-page .collection-grid {
       grid-template-columns: 1fr;
     }
   
-    .collection-card-content > p:not(.basket-eyebrow) {
+    body.basket-page .collection-card-content > p:not(.basket-eyebrow) {
       min-height: auto;
     }
   
-    .customisation-section {
+    body.basket-page .customisation-section {
       padding: 35px 22px;
     }
   
-    .form-grid {
+    body.basket-page .form-grid {
       grid-template-columns: 1fr;
       gap: 20px;
     }
   
-    .price-reference {
+    body.basket-page .price-reference {
       padding: 25px 20px;
     }
   
-    .details-section {
+    body.basket-page .details-section {
       margin-top: 65px;
     }
   
-    .delivery-section {
+    body.basket-page .delivery-section {
       margin-top: 65px;
     }
   
-    .fulfilment-options {
+    body.basket-page .fulfilment-options {
       grid-template-columns: 1fr;
     }
   
-    .fulfilment-card {
+    body.basket-page .fulfilment-card {
       padding: 25px;
     }
   
-    .delivery-address,
-    .collection-information {
+    body.basket-page .delivery-address, body.basket-page .collection-information {
       padding: 25px 20px;
     }
   
-    .order-summary {
+    body.basket-page .order-summary {
       padding: 35px 25px;
       margin-top: 55px;
     }
   
-    .basket-confirmation {
+    body.basket-page .basket-confirmation {
       padding: 65px 6%;
       min-height: 550px;
     }
   
-    .confirmation-description {
+    body.basket-page .confirmation-description {
       font-size: 13px;
     }
   
-    .basket-closing {
+    body.basket-page .basket-closing {
       padding: 75px 6%;
     }
   
-    .basket-closing h2 {
+    body.basket-page .basket-closing h2 {
       font-size: clamp(32px,8vw,48px);
     }
   
-    .site-footer {
+    body.basket-page .site-footer {
       flex-direction: column;
       text-align: center;
     }
   
-    .footer-links {
+    body.basket-page .footer-links {
       justify-content: center;
     }
   
   }
   
   
-  body.basket-page /* SMALL PHONES */
+  /* SMALL PHONES */
   
   @media (max-width: 400px) {
   
-    .basket-eyebrow {
+    body.basket-page .basket-eyebrow {
       font-size: 9px;
       letter-spacing: 1.5px;
     }
   
-    .price-row,
-    .summary-row {
+    body.basket-page .price-row, body.basket-page .summary-row {
       align-items: flex-start;
     }
   
-    .summary-total {
+    body.basket-page .summary-total {
       flex-direction: column;
       align-items: flex-start;
     }
   
-    .checkout-button,
-    .basket-primary-btn {
+    body.basket-page .checkout-button, body.basket-page .basket-primary-btn {
       padding: 18px 12px;
       font-size: 10px;
       letter-spacing: 0.8px;
@@ -5065,7 +4942,7 @@ body.basket-page /* ==========================================
   }
   
   
-  body.basket-page /* REDUCED MOTION */
+  /* REDUCED MOTION */
   
   @media (prefers-reduced-motion: reduce) {
   
@@ -5073,33 +4950,29 @@ body.basket-page /* ==========================================
       scroll-behavior: auto;
     }
   
-    *,
-    *::before,
-    *::after {
+    *, *::before, *::after {
       transition: none !important;
       animation: none !important;
     }
   
-  }
-  
-  
-body.basket-page /* ==========================================
+  }/* ==========================================
    STERNRITTERS BASKET
    RESPONSIVE IMPROVEMENTS
    ADD TO BOTTOM OF STYLE5.CSS
 ========================================== */
 
+  
+  
 :root {
   --gold: #e5bc68;
   --gold-light: #f4d998;
   --ivory: #f5f0e8;
   --muted: #bcb5aa;
   --border: rgba(229, 188, 104, 0.22);
-}
+}/* GENERAL SAFETY */
 
-body.basket-page /* GENERAL SAFETY */
 
-body {
+body.basket-page {
   overflow-x: hidden;
 }
 
@@ -5114,13 +4987,12 @@ body.basket-page img {
 body.basket-page a:focus-visible, body.basket-page label[tabindex]:focus-visible, body.basket-page input:focus-visible, body.basket-page select:focus-visible, body.basket-page textarea:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 3px;
-}
-
-body.basket-page /* ==========================================
+}/* ==========================================
    SHARED HEADER
 ========================================== */
 
-.site-header {
+
+body.basket-page .site-header {
   position: relative;
   z-index: 10;
 
@@ -5175,13 +5047,12 @@ body.basket-page .appointment-btn {
   font-size: 11px;
   letter-spacing: 1.2px;
   text-align: center;
-}
-
-body.basket-page /* ==========================================
+}/* ==========================================
    HERO IMAGE
 ========================================== */
 
-.basket-hero {
+
+body.basket-page .basket-hero {
   grid-template-columns:
     minmax(0, 1fr)
     minmax(0, 1fr);
@@ -5197,13 +5068,12 @@ body.basket-page .basket-hero-image {
 
 body.basket-page .basket-hero-image img {
   max-width: 100%;
-}
-
-body.basket-page /* ==========================================
+}/* ==========================================
    COLLECTION IMAGES
 ========================================== */
 
-.collection-grid {
+
+body.basket-page .collection-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -5235,13 +5105,12 @@ body.basket-page .collection-card-content {
 body.basket-page .collection-price {
   margin-top: auto;
   padding-top: 20px;
-}
-
-body.basket-page /* ==========================================
+}/* ==========================================
    FORM IMPROVEMENTS
 ========================================== */
 
-.form-grid {
+
+body.basket-page .form-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -5257,13 +5126,12 @@ body.basket-page .form-group select {
 
 body.basket-page .form-group input:focus, body.basket-page .form-group select:focus, body.basket-page .order-notes textarea:focus {
   border-color: var(--gold);
-}
-
-body.basket-page /* ==========================================
+}/* ==========================================
    DELIVERY OPTIONS
 ========================================== */
 
-.fulfilment-options {
+
+body.basket-page .fulfilment-options {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -5275,13 +5143,12 @@ body.basket-page .fulfilment-card {
 body.basket-page .delivery-address, body.basket-page .collection-information {
   min-width: 0;
   max-width: 100%;
-}
-
-body.basket-page /* ==========================================
+}/* ==========================================
    PRICE GUIDE AND SUMMARY
 ========================================== */
 
-.price-row, body.basket-page .summary-row, body.basket-page .summary-total {
+
+body.basket-page .price-row, body.basket-page .summary-row, body.basket-page .summary-total {
   min-width: 0;
 }
 
@@ -5303,19 +5170,19 @@ body.basket-page .basket-primary-btn {
   text-align: center;
 }
 
-body.basket-page /* ==========================================
+/* ==========================================
    TABLET / SMALL LAPTOP
 ========================================== */
 
 @media (max-width: 1250px) {
 
-  .site-header {
+  body.basket-page .site-header {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 18px;
   }
 
-  .main-nav {
+  body.basket-page .main-nav {
     order: 3;
     width: 100%;
     justify-content: center;
@@ -5347,15 +5214,14 @@ body.basket-page /* ==========================================
 
 }
 
-body.basket-page /* ==========================================
+/* ==========================================
    MOBILE PHONES
 ========================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {/* HEADER */
 
-  /* HEADER */
 
-  .site-header {
+  body.basket-page .site-header {
     padding: 20px 5% 18px;
 
     flex-direction: column;
@@ -5366,13 +5232,13 @@ body.basket-page /* ==========================================
     text-align: center;
   }
 
-  .logo {
+  body.basket-page .logo {
     font-size: clamp(20px, 5.5vw, 25px);
     letter-spacing: 2.5px;
     white-space: normal;
   }
 
-  .main-nav {
+  body.basket-page .main-nav {
     order: 0;
     width: 100%;
 
@@ -5383,312 +5249,298 @@ body.basket-page /* ==========================================
     gap: 8px 14px;
   }
 
-  .main-nav a {
+  body.basket-page .main-nav a {
     padding: 5px 2px;
     font-size: 11px;
     line-height: 1.5;
     letter-spacing: 0.2px;
   }
 
-  .header-actions {
+  body.basket-page .header-actions {
     width: 100%;
     justify-content: center;
   }
 
-  .appointment-btn {
+  body.basket-page .appointment-btn {
     min-height: 42px;
     padding: 11px 20px;
     font-size: 10px;
-  }
+  }/* HERO */
 
-  /* HERO */
 
-  .basket-hero {
+  body.basket-page .basket-hero {
     grid-template-columns: minmax(0, 1fr);
     min-height: auto;
   }
 
-  .basket-hero-content {
+  body.basket-page .basket-hero-content {
     padding: 65px 7% 45px;
   }
 
-  .basket-hero h1 {
+  body.basket-page .basket-hero h1 {
     font-size: clamp(42px, 10vw, 60px);
   }
 
-  .basket-hero-description {
+  body.basket-page .basket-hero-description {
     font-size: 13px;
     line-height: 1.85;
   }
 
-  .basket-hero-image {
+  body.basket-page .basket-hero-image {
     min-height: 0;
     height: auto;
   }
 
-  .basket-hero-image img {
+  body.basket-page .basket-hero-image img {
     width: 100%;
     height: auto;
     object-fit: contain;
-  }
+  }/* INTRODUCTION */
 
-  /* INTRODUCTION */
 
-  .basket-intro {
+  body.basket-page .basket-intro {
     padding: 65px 6% 50px;
   }
 
-  .basket-intro h2 {
+  body.basket-page .basket-intro h2 {
     font-size: clamp(32px, 8vw, 45px);
-  }
+  }/* COLLECTION CARDS */
 
-  /* COLLECTION CARDS */
 
-  .basket-container {
+  body.basket-page .basket-container {
     width: 90%;
     padding: 25px 0 75px;
   }
 
-  .collection-section {
+  body.basket-page .collection-section {
     padding: 40px 0 60px;
   }
 
-  .collection-grid {
+  body.basket-page .collection-grid {
     grid-template-columns: minmax(0, 1fr);
     max-width: 480px;
     gap: 25px;
     margin-inline: auto;
   }
 
-  .collection-image {
+  body.basket-page .collection-image {
     aspect-ratio: 3 / 4;
   }
 
-  .collection-card-content {
+  body.basket-page .collection-card-content {
     padding: 25px 22px;
   }
 
-  .collection-card-content h3 {
+  body.basket-page .collection-card-content h3 {
     font-size: 30px;
   }
 
-  .collection-card-content > p:not(.basket-eyebrow) {
+  body.basket-page .collection-card-content > p:not(.basket-eyebrow) {
     min-height: 0;
-  }
+  }/* CUSTOMISATION */
 
-  /* CUSTOMISATION */
 
-  .customisation-section {
+  body.basket-page .customisation-section {
     padding: 35px 22px;
   }
 
-  .section-title {
+  body.basket-page .section-title {
     font-size: clamp(30px, 8vw, 43px);
   }
 
-  .section-description {
+  body.basket-page .section-description {
     font-size: 13px;
     line-height: 1.85;
   }
 
-  .form-grid {
+  body.basket-page .form-grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 20px;
   }
 
-  .form-group input,
-  .form-group select {
+  body.basket-page .form-group input, body.basket-page .form-group select {
     width: 100%;
     min-height: 50px;
     padding: 14px;
     font-size: 16px;
   }
 
-  .order-notes textarea {
+  body.basket-page .order-notes textarea {
     font-size: 16px;
-  }
+  }/* PRICE GUIDE */
 
-  /* PRICE GUIDE */
 
-  .price-reference {
+  body.basket-page .price-reference {
     padding: 25px 20px;
   }
 
-  .price-row {
+  body.basket-page .price-row {
     gap: 12px;
     font-size: 12px;
   }
 
-  .price-row strong {
+  body.basket-page .price-row strong {
     font-size: 16px;
     text-align: right;
-  }
+  }/* CUSTOMER DETAILS */
 
-  /* CUSTOMER DETAILS */
 
-  .details-section {
+  body.basket-page .details-section {
     margin-top: 65px;
     padding-top: 45px;
-  }
+  }/* DELIVERY */
 
-  /* DELIVERY */
 
-  .delivery-section {
+  body.basket-page .delivery-section {
     margin-top: 65px;
   }
 
-  .fulfilment-options {
+  body.basket-page .fulfilment-options {
     grid-template-columns: minmax(0, 1fr);
     gap: 15px;
   }
 
-  .fulfilment-card {
+  body.basket-page .fulfilment-card {
     min-height: 0;
     padding: 25px;
   }
 
-  .delivery-address,
-  .collection-information {
+  body.basket-page .delivery-address, body.basket-page .collection-information {
     padding: 25px 20px;
-  }
+  }/* ORDER SUMMARY */
 
-  /* ORDER SUMMARY */
 
-  .order-summary {
+  body.basket-page .order-summary {
     padding: 35px 22px;
     margin-top: 55px;
   }
 
-  .order-summary h2 {
+  body.basket-page .order-summary h2 {
     font-size: clamp(30px, 8vw, 42px);
   }
 
-  .summary-row {
+  body.basket-page .summary-row {
     gap: 12px;
     font-size: 12px;
   }
 
-  .summary-row strong {
+  body.basket-page .summary-row strong {
     font-size: 12px;
   }
 
-  .summary-total strong {
+  body.basket-page .summary-total strong {
     font-size: 22px;
   }
 
-  .checkout-button {
+  body.basket-page .checkout-button {
     width: 100%;
     padding: 17px 14px;
     gap: 12px;
 
     font-size: 10px;
     letter-spacing: 0.8px;
-  }
+  }/* CONFIRMATION */
 
-  /* CONFIRMATION */
 
-  .basket-confirmation {
+  body.basket-page .basket-confirmation {
     min-height: 500px;
     padding: 65px 6%;
   }
 
-  .basket-confirmation h2 {
+  body.basket-page .basket-confirmation h2 {
     font-size: clamp(32px, 8vw, 48px);
   }
 
-  .confirmation-description {
+  body.basket-page .confirmation-description {
     font-size: 13px;
   }
 
-  .basket-primary-btn {
+  body.basket-page .basket-primary-btn {
     padding: 17px 20px;
     font-size: 10px;
-  }
+  }/* CLOSING */
 
-  /* CLOSING */
 
-  .basket-closing {
+  body.basket-page .basket-closing {
     padding: 75px 6%;
   }
 
-  .basket-closing h2 {
+  body.basket-page .basket-closing h2 {
     font-size: clamp(32px, 8vw, 48px);
-  }
+  }/* FOOTER */
 
-  /* FOOTER */
 
-  .site-footer {
+  body.basket-page .site-footer {
     flex-direction: column;
     gap: 15px;
     padding: 30px 6%;
     text-align: center;
   }
 
-  .footer-links {
+  body.basket-page .footer-links {
     flex-wrap: wrap;
     justify-content: center;
   }
 
 }
 
-body.basket-page /* ==========================================
+/* ==========================================
    VERY SMALL PHONES
 ========================================== */
 
 @media (max-width: 400px) {
 
-  .site-header {
+  body.basket-page .site-header {
     gap: 14px;
   }
 
-  .logo {
+  body.basket-page .logo {
     font-size: 20px;
     letter-spacing: 2px;
   }
 
-  .main-nav {
+  body.basket-page .main-nav {
     gap: 7px 11px;
   }
 
-  .main-nav a {
+  body.basket-page .main-nav a {
     font-size: 10px;
   }
 
-  .basket-container {
+  body.basket-page .basket-container {
     width: 94%;
   }
 
-  .customisation-section {
+  body.basket-page .customisation-section {
     padding: 28px 15px;
   }
 
-  .basket-eyebrow {
+  body.basket-page .basket-eyebrow {
     font-size: 9px;
     letter-spacing: 1.5px;
   }
 
-  .price-row,
-  .summary-row {
+  body.basket-page .price-row, body.basket-page .summary-row {
     align-items: flex-start;
   }
 
-  .summary-total {
+  body.basket-page .summary-total {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .order-summary {
+  body.basket-page .order-summary {
     padding: 28px 16px;
   }
 
-  .checkout-button {
+  body.basket-page .checkout-button {
     padding: 16px 10px;
     font-size: 9px;
   }
 
 }
 
-body.basket-page /* ==========================================
+/* ==========================================
    REDUCED MOTION
 ========================================== */
 
@@ -5698,18 +5550,16 @@ body.basket-page /* ==========================================
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     transition: none !important;
     animation: none !important;
   }
 
-}
+}/* SHARED STERNRITTER HEADER ALIGNMENT */
 
 
-body.basket-page /* SHARED STERNRITTER HEADER ALIGNMENT */
-.site-header {
+
+body.basket-page .site-header {
   position: relative;
   z-index: 10;
   width: 100%;
@@ -5824,15 +5674,11 @@ body.basket-page .site-header .appointment-btn:hover {
 }
 
 
-/* =====================================================
-   contact.html | imported from style6.css
-===================================================== */
-
-body.contact-page /* ==========================================
+/* ================= contact.html ================= */
+/* ==========================================
    STERNRITTERS
    CONTACT PAGE - STYLE6.CSS
 ========================================== */
-
 /* GENERAL SETTINGS */
 
 * {
@@ -5860,14 +5706,13 @@ body.contact-page a {
     color: inherit;
     text-decoration: none;
     transition: 0.3s ease;
-}
-
-
-body.contact-page /* ==========================================
+}/* ==========================================
    NAVIGATION HEADER
 ========================================== */
 
-.site-header {
+
+
+body.contact-page .site-header {
     width: 100%;
     min-height: 100px;
 
@@ -5882,12 +5727,11 @@ body.contact-page /* ==========================================
 
     border-bottom: 1px solid
         rgba(229, 188, 104, 0.18);
-}
+}/* LOGO */
 
 
-body.contact-page /* LOGO */
 
-.logo {
+body.contact-page .logo {
     color: #e5bc68;
 
     font-family: Georgia, serif;
@@ -5901,12 +5745,11 @@ body.contact-page /* LOGO */
 body.contact-page .logo:hover {
     text-shadow: 0 0 15px
         rgba(229, 188, 104, 0.5);
-}
+}/* NAVIGATION LINKS */
 
 
-body.contact-page /* NAVIGATION LINKS */
 
-.main-nav {
+body.contact-page .main-nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5926,12 +5769,11 @@ body.contact-page .main-nav a {
 
 body.contact-page .main-nav a:hover, body.contact-page .main-nav a.active {
     color: #e5bc68;
-}
+}/* HEADER ACTIONS */
 
 
-body.contact-page /* HEADER ACTIONS */
 
-.header-actions {
+body.contact-page .header-actions {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -5953,14 +5795,13 @@ body.contact-page .appointment-btn {
 body.contact-page .appointment-btn:hover {
     background: #e5bc68;
     color: #080808;
-}
-
-
-body.contact-page /* ==========================================
+}/* ==========================================
    CONTACT PAGE
 ========================================== */
 
-.contact-main {
+
+
+body.contact-page .contact-main {
     flex: 1;
 
     display: flex;
@@ -5982,12 +5823,11 @@ body.contact-page .contact-section {
 
     margin: 0 auto;
     padding: 70px 0 75px;
-}
+}/* PAGE HEADING */
 
 
-body.contact-page /* PAGE HEADING */
 
-.contact-heading {
+body.contact-page .contact-heading {
     text-align: center;
     margin-bottom: 45px;
 }
@@ -6028,14 +5868,13 @@ body.contact-page .contact-description {
 
     font-size: 14px;
     line-height: 1.9;
-}
-
-
-body.contact-page /* ==========================================
+}/* ==========================================
    CONTACT CARDS
 ========================================== */
 
-.contact-grid {
+
+
+body.contact-page .contact-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -6111,14 +5950,13 @@ body.contact-page .demo-note {
     margin-top: 12px;
     margin-bottom: 0 !important;
     color: #888077 !important;
-}
-
-
-body.contact-page /* ==========================================
+}/* ==========================================
    SOCIAL MEDIA SECTION
 ========================================== */
 
-.social-section {
+
+
+body.contact-page .social-section {
     text-align: center;
 
     margin-top: 60px;
@@ -6196,14 +6034,13 @@ body.contact-page .social-disclaimer {
     line-height: 1.8;
 
     margin-top: 30px;
-}
-
-
-body.contact-page /* ==========================================
+}/* ==========================================
    FOOTER
 ========================================== */
 
-.site-footer {
+
+
+body.contact-page .site-footer {
     margin-top: auto;
 
     padding: 28px 5%;
@@ -6248,18 +6085,18 @@ body.contact-page .footer-links a:hover {
 }
 
 
-body.contact-page /* ==========================================
+/* ==========================================
    TABLET RESPONSIVE
 ========================================== */
 
 @media (max-width: 1100px) {
 
-    .site-header {
+    body.contact-page .site-header {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .main-nav {
+    body.contact-page .main-nav {
         order: 3;
         width: 100%;
         gap: 18px;
@@ -6268,104 +6105,103 @@ body.contact-page /* ==========================================
 }
 
 
-body.contact-page /* ==========================================
+/* ==========================================
    MOBILE RESPONSIVE
 ========================================== */
 
 @media (max-width: 700px) {
 
-    .site-header {
+    body.contact-page .site-header {
         padding: 22px 5%;
         justify-content: center;
         text-align: center;
     }
 
-    .logo {
+    body.contact-page .logo {
         font-size: 23px;
     }
 
-    .main-nav {
+    body.contact-page .main-nav {
         gap: 12px 18px;
     }
 
-    .main-nav a {
+    body.contact-page .main-nav a {
         font-size: 10px;
     }
 
-    .appointment-btn {
+    body.contact-page .appointment-btn {
         padding: 11px 14px;
         font-size: 10px;
     }
 
-    .contact-section {
+    body.contact-page .contact-section {
         width: 92%;
         padding: 55px 0;
     }
 
-    .contact-heading {
+    body.contact-page .contact-heading {
         margin-bottom: 35px;
     }
 
-    .contact-grid {
+    body.contact-page .contact-grid {
         grid-template-columns: 1fr;
         gap: 18px;
     }
 
-    .contact-card {
+    body.contact-page .contact-card {
         min-height: auto;
         padding: 30px 20px;
     }
 
-    .social-section {
+    body.contact-page .social-section {
         margin-top: 45px;
         padding-top: 35px;
     }
 
-    .social-links {
+    body.contact-page .social-links {
         gap: 20px;
     }
 
-    .social-item {
+    body.contact-page .social-item {
         min-width: 120px;
     }
 
-    .site-footer {
+    body.contact-page .site-footer {
         flex-direction: column;
         text-align: center;
     }
 
-    .footer-links {
+    body.contact-page .footer-links {
         justify-content: center;
     }
 
 }
 
 
-body.contact-page /* ==========================================
+/* ==========================================
    SMALL PHONES
 ========================================== */
 
 @media (max-width: 400px) {
 
-    .eyebrow {
+    body.contact-page .eyebrow {
         font-size: 9px;
         letter-spacing: 1.5px;
     }
 
-    .social-links {
+    body.contact-page .social-links {
         gap: 12px;
     }
 
-    .social-item {
+    body.contact-page .social-item {
         min-width: 100px;
     }
 
-}
+}/* ACCESSIBILITY */
 
 
-body.contact-page /* ACCESSIBILITY */
 
-a:focus-visible {
+body.contact-page a:focus-visible {
     outline: 2px solid #e5bc68;
     outline-offset: 4px;
 }
@@ -6380,18 +6216,16 @@ a:focus-visible {
         transition: none !important;
     }
 
-}
-
-
-body.contact-page /* ==========================================
+}/* ==========================================
    STERNRITTERS CONTACT PAGE
    FINAL RESPONSIVE IMPROVEMENTS
    ADD TO BOTTOM OF STYLE6.CSS
 ========================================== */
-
 /* GENERAL IMPROVEMENTS */
 
-body {
+
+
+body.contact-page {
     overflow-x: hidden;
 }
 
@@ -6402,13 +6236,12 @@ body.contact-page .contact-main, body.contact-page .contact-section, body.contac
 body.contact-page img {
     max-width: 100%;
     height: auto;
-}
-
-body.contact-page /* ==========================================
+}/* ==========================================
    HEADER - MATCH OTHER PAGES
 ========================================== */
 
-.site-header {
+
+body.contact-page .site-header {
     position: relative;
     z-index: 10;
 
@@ -6464,13 +6297,12 @@ body.contact-page .appointment-btn {
     font-size: 11px;
     letter-spacing: 1.2px;
     text-align: center;
-}
-
-body.contact-page /* ==========================================
+}/* ==========================================
    CONTACT CONTENT
 ========================================== */
 
-.contact-section {
+
+body.contact-page .contact-section {
     width: 90%;
     max-width: 1100px;
     padding: 85px 0 90px;
@@ -6499,13 +6331,12 @@ body.contact-page .contact-card {
 body.contact-page .contact-value {
     max-width: 100%;
     overflow-wrap: anywhere;
-}
-
-body.contact-page /* ==========================================
+}/* ==========================================
    SOCIAL MEDIA
 ========================================== */
 
-.social-links {
+
+body.contact-page .social-links {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 
@@ -6526,19 +6357,19 @@ body.contact-page .social-item small {
     line-height: 1.6;
 }
 
-body.contact-page /* ==========================================
+/* ==========================================
    TABLET
 ========================================== */
 
 @media (max-width: 1250px) {
 
-    .site-header {
+    body.contact-page .site-header {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 18px;
     }
 
-    .main-nav {
+    body.contact-page .main-nav {
         order: 3;
         width: 100%;
         justify-content: center;
@@ -6546,15 +6377,14 @@ body.contact-page /* ==========================================
 
 }
 
-body.contact-page /* ==========================================
+/* ==========================================
    MOBILE
 ========================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {/* HEADER */
 
-    /* HEADER */
 
-    .site-header {
+    body.contact-page .site-header {
         padding: 20px 5% 18px;
 
         flex-direction: column;
@@ -6565,13 +6395,13 @@ body.contact-page /* ==========================================
         text-align: center;
     }
 
-    .logo {
+    body.contact-page .logo {
         font-size: clamp(20px, 5.5vw, 25px);
         letter-spacing: 2.5px;
         white-space: normal;
     }
 
-    .main-nav {
+    body.contact-page .main-nav {
         order: 0;
         width: 100%;
 
@@ -6582,7 +6412,7 @@ body.contact-page /* ==========================================
         gap: 8px 14px;
     }
 
-    .main-nav a {
+    body.contact-page .main-nav a {
         padding: 5px 2px;
 
         font-size: 11px;
@@ -6590,97 +6420,93 @@ body.contact-page /* ==========================================
         letter-spacing: 0.2px;
     }
 
-    .header-actions {
+    body.contact-page .header-actions {
         width: 100%;
         justify-content: center;
     }
 
-    .appointment-btn {
+    body.contact-page .appointment-btn {
         min-height: 42px;
         padding: 11px 20px;
         font-size: 10px;
-    }
+    }/* PAGE HEADING */
 
-    /* PAGE HEADING */
 
-    .contact-section {
+    body.contact-page .contact-section {
         width: 90%;
         padding: 65px 0 75px;
     }
 
-    .contact-heading {
+    body.contact-page .contact-heading {
         margin-bottom: 35px;
     }
 
-    .contact-heading h1 {
+    body.contact-page .contact-heading h1 {
         font-size: clamp(36px, 9vw, 52px);
         margin: 18px 0;
     }
 
-    .eyebrow {
+    body.contact-page .eyebrow {
         font-size: 10px;
         letter-spacing: 1.8px;
         line-height: 1.7;
     }
 
-    .contact-description {
+    body.contact-page .contact-description {
         font-size: 13px;
         line-height: 1.85;
-    }
+    }/* CONTACT CARDS */
 
-    /* CONTACT CARDS */
 
-    .contact-grid {
+    body.contact-page .contact-grid {
         grid-template-columns: minmax(0, 1fr);
         gap: 20px;
     }
 
-    .contact-card {
+    body.contact-page .contact-card {
         min-height: 0;
         padding: 30px 22px;
     }
 
-    .contact-card h2 {
+    body.contact-page .contact-card h2 {
         font-size: 25px;
     }
 
-    .contact-card p {
+    body.contact-page .contact-card p {
         font-size: 13px;
     }
 
-    .contact-value {
+    body.contact-page .contact-value {
         font-size: 12px;
-    }
+    }/* SOCIAL MEDIA */
 
-    /* SOCIAL MEDIA */
 
-    .social-section {
+    body.contact-page .social-section {
         margin-top: 50px;
         padding-top: 40px;
     }
 
-    .social-section h2 {
+    body.contact-page .social-section h2 {
         font-size: clamp(28px, 7vw, 39px);
         line-height: 1.3;
     }
 
-    .social-links {
+    body.contact-page .social-links {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 18px;
     }
 
-    .social-item {
+    body.contact-page .social-item {
         padding: 18px 10px;
     }
 
-    .social-disclaimer {
+    body.contact-page .social-disclaimer {
         font-size: 10px;
         line-height: 1.8;
-    }
+    }/* FOOTER */
 
-    /* FOOTER */
 
-    .site-footer {
+    body.contact-page .site-footer {
         flex-direction: column;
         justify-content: center;
 
@@ -6690,56 +6516,56 @@ body.contact-page /* ==========================================
         text-align: center;
     }
 
-    .footer-links {
+    body.contact-page .footer-links {
         flex-wrap: wrap;
         justify-content: center;
     }
 
 }
 
-body.contact-page /* ==========================================
+/* ==========================================
    VERY SMALL PHONES
 ========================================== */
 
 @media (max-width: 400px) {
 
-    .site-header {
+    body.contact-page .site-header {
         gap: 14px;
     }
 
-    .logo {
+    body.contact-page .logo {
         font-size: 20px;
         letter-spacing: 2px;
     }
 
-    .main-nav {
+    body.contact-page .main-nav {
         gap: 7px 11px;
     }
 
-    .main-nav a {
+    body.contact-page .main-nav a {
         font-size: 10px;
     }
 
-    .contact-heading h1 {
+    body.contact-page .contact-heading h1 {
         font-size: 35px;
     }
 
-    .contact-card {
+    body.contact-page .contact-card {
         padding: 26px 18px;
     }
 
-    .social-links {
+    body.contact-page .social-links {
         grid-template-columns: minmax(0, 1fr);
         gap: 10px;
     }
 
-    .social-item {
+    body.contact-page .social-item {
         padding: 15px;
     }
 
 }
 
-body.contact-page /* ==========================================
+/* ==========================================
    REDUCED MOTION
 ========================================== */
 
@@ -6749,18 +6575,16 @@ body.contact-page /* ==========================================
         scroll-behavior: auto;
     }
 
-    *,
-    *::before,
-    *::after {
+    *, *::before, *::after {
         transition: none !important;
         animation: none !important;
     }
 
-}
+}/* SHARED STERNRITTER HEADER ALIGNMENT */
 
 
-body.contact-page /* SHARED STERNRITTER HEADER ALIGNMENT */
-.site-header {
+
+body.contact-page .site-header {
   position: relative;
   z-index: 10;
   width: 100%;
