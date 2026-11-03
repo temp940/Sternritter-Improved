@@ -22,3 +22,10 @@ The contact form is a **demonstration only** using `contact@sternritter.example`
 
 ## Deployment
 Publish `main` from the repository root under **Settings → Pages**. The homepage is `index.html`.
+
+## Navigation and image curation update
+- Desktop: persistent top navigation with active-page indicator.
+- Tablet/mobile: visible scrollable page navigation under the masthead.
+- Slide-out menu stays available for expanded browsing; the footer now contains one enquiry action rather than the primary links.
+- Lookbook: all 22 original images grouped into Collections (3), Signature Shades (5), Fit & Measurements (7), Campaign & Craft (4), and Finishing Details (3).
+- Collections banner uses collection photography; fitting-study imagery moved to the Fit Guide. Brand imagery appears with the story, not randomly in a collection.
